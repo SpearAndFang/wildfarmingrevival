@@ -1,0 +1,95 @@
+{
+  "code": "wildplant",
+  "entityClass": "WildPlant",
+  "creativeinventory": {
+    "wildfarming": [ "*" ]
+  },
+  "attributes": {
+    "handbook": {
+      "groupBy": [ "wildplant-*" ]
+    }
+  },
+  "variantgroups": [
+    {
+      "code": "type",
+      "states": [ "flower-croton" ]
+    },
+    {
+      "code": "size",
+      "states": [ "small", "medium" ]
+    },
+    {
+      "code": "color",
+      "states": [
+        "crimson-brown-green",
+        "crimson-green",
+        "crimson-orange",
+        "darkgreen-gold",
+        "darkgreen-gold-crimson",
+        "green-orange",
+        "lemongreen",
+        "lemongreen-crimson"
+      ]
+    }
+  ],
+  "drawtype": "JSON",
+  "replaceable": 5000,
+  "behaviors": [ { "name": "Unstable" } ],
+  "attributes": {
+    "handbook": {
+      "exclude": true
+    },
+    "maxTemp": 50,
+    "minTemp": 15,
+    "hours": 384
+  },
+  "drops": [
+    {
+      "type": "item",
+      "code": "wildfarmingrevival:wildseeds-{type}-{size}-{color}"
+    }
+  ],
+  "frostable": true,
+  "combustibleProps": {
+    "burnTemperature": 600,
+    "burnDuration": 5
+  },
+  "climateColorMap": "climatePlantTint",
+  "seasonColorMap": "seasonalFoliage",
+  "blockmaterial": "Plant",
+  "shape": { "base": "game:block/basic/cross-short" },
+  "renderpass": "OpaqueNoCull",
+  "lightAbsorption": 0,
+  "sideopaque": {
+    "all": false
+  },
+  "collisionbox": null,
+  "selectionbox": {
+    "x1": 0.125,
+    "y1": 0,
+    "z1": 0.125,
+    "x2": 0.875,
+    "y2": 0.25,
+    "z2": 0.875
+  },
+  "sidesolid": {
+    "all": false
+  },
+  "textures": {
+    "all": { "base": "block/wildplant" }
+  },
+  "resistance": 0.5,
+  "sounds": {
+    "place": "game:block/plant",
+    "break": "game:block/plant",
+    "hit": "game:block/plant"
+  },
+  "guiTransform": {
+    "origin": {
+      "x": 0.5,
+      "y": 0.2,
+      "z": 0.5
+    },
+    "scale": 2.24
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "code": "wildplant",
+  "entityClass": "WildPlant",
+  "creativeinventory": {
+    "wildfarming": [ "*-free" ]
+  },
+  "attributes": {
+    "handbook": {
+      "groupBy": [ "wildplant-*" ]
+    }
+  },
+  "variantgroups": [
+    {
+      "code": "type",
+      "states": [ "flower" ]
+    },
+    {
+      "code": "flower",
+      "loadFromProperties": "block/flower"
+    },
+    {
+      "code": "cover",
+      "states": [ "free", "snow" ]
+    }
+  ],
+  "drawtype": "JSON",
+  "replaceable": 5000,
+  "behaviors": [ { "name": "Unstable" } ],
+  "attributes": {
+    "handbook": {
+      "exclude": true
+    },
+    "hoursByType": {
+      "*-catmint-*": 192,
+      "*-forgetmenot-*": 192,
+      "*-edelweiss-*": 120,
+      "*-heather-*": 384,
+      "*-horsetail-*": 120,
+      "*-orangemallow-*": 192,
+      "*-wilddaisy-*": 192,
+      "*-westerngorse-*": 576,
+      "*-cowparsley-*": 192,
+      "*-californiapoppy-*": 168,
+      "*-lilyofthevalley-*": 192,
+      "*-woad-*": 192,
+      "*-cornflower-*": 192
+    },
+    "minTempByType": {
+      "*-catmint-*": -5,
+      "*-forgetmenot-*": -3,
+      "*-edelweiss-*": -11,
+      "*-heather-*": -8,
+      "*-horsetail-*": -9,
+      "*-orangemallow-*": 10,
+      "*-wilddaisy-*": -3,
+      "*-westerngorse-*": -8,
+      "*-cowparsley-*": -8,
+      "*-californiapoppy-*": 12,
+      "*-lilyofthevalley-*": -8,
+      "*-woad-*": -7,
+      "*-cornflower-*": -3
+    },
+    "maxTempByType": {
+      "*-catmint-*": 29,
+      "*-forgetmenot-*": 30,
+      "*-edelweiss-*": 22,
+      "*-heather-*": 25,
+      "*-horsetail-*": 25,
+      "*-orangemallow-*": 47,
+      "*-wilddaisy-*": 30,
+      "*-westerngorse-*": 25,
+      "*-cowparsley-*": 30,
+      "*-californiapoppy-*": 35,
+      "*-lilyofthevalley-*": 23,
+      "*-woad-*": 25,
+      "*-cornflower-*": 27
+    }
+  },
+  "drops": [
+    {
+      "type": "item",
+      "code": "wildfarmingrevival:wildseeds-{type}-{flower}-{cover}"
+    }
+  ],
+  "frostable": true,
+  "combustibleProps": {
+    "burnTemperature": 600,
+    "burnDuration": 5
+  },
+  "climateColorMap": "climatePlantTint",
+  "seasonColorMap": "seasonalFoliage",
+  "blockmaterial": "Plant",
+  "shape": { "base": "game:block/basic/cross-short" },
+  "renderpass": "OpaqueNoCull",
+  "lightAbsorption": 0,
+  "sideopaque": {
+    "all": false
+  },
+  "collisionbox": null,
+  "selectionbox": {
+    "x1": 0.125,
+    "y1": 0,
+    "z1": 0.125,
+    "x2": 0.875,
+    "y2": 0.25,
+    "z2": 0.875
+  },
+  "sidesolid": {
+    "all": false
+  },
+  "textures": {
+    "all": { "base": "block/wildplant" }
+  },
+  "resistance": 0.5,
+  "sounds": {
+    "place": "game:block/plant",
+    "break": "game:block/plant",
+    "hit": "game:block/plant"
+  },
+  "guiTransform": {
+    "origin": {
+      "x": 0.5,
+      "y": 0.2,
+      "z": 0.5
+    },
+    "scale": 2.24
+  }
+}

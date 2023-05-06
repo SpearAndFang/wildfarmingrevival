@@ -1,0 +1,27 @@
+{
+  "recipeingredient-item-herbbundle-basil-insturmentalcase": "Bündel-Basilikum",
+  "recipeingredient-item-herbbundle-chamomile-insturmentalcase": "Bündel-Kamille",
+  "recipeingredient-item-herbbundle-cilantro-insturmentalcase": "Bündel-Koriander",
+  "recipeingredient-item-herbbundle-lavender-insturmentalcase": "Bündel-Lavendel",
+  "recipeingredient-item-herbbundle-marjoram-insturmentalcase": "Bündel-Majoran",
+  "recipeingredient-item-herbbundle-mint-insturmentalcase": "Bündel-Minze",
+  "recipeingredient-item-herbbundle-saffron-insturmentalcase": "Bündel-Safran",
+  "recipeingredient-item-herbbundle-sage-insturmentalcase": "Bündel-Salbei",
+  "recipeingredient-item-herbbundle-thyme-insturmentalcase": "Bündel-Thymian",
+
+  "meal-ingredient-soup-primary-herbbundle-basil": "Bündel-Basilikum",
+  "meal-ingredient-soup-primary-herbbundle-chamomile": "Bündel-Kamille",
+  "meal-ingredient-soup-primary-herbbundle-cilantro": "Bündel-Koriander",
+  "meal-ingredient-soup-primary-herbbundle-lavender": "Bündel-Lavendel",
+  "meal-ingredient-soup-primary-herbbundle-marjoram": "Bündel-Majoran",
+  "meal-ingredient-soup-primary-herbbundle-mint": "Bündel-Minze",
+  "meal-ingredient-soup-primary-herbbundle-saffron": "Bündel-Safran",
+  "meal-ingredient-soup-primary-herbbundle-sage": "Bündel-Salbei",
+  "meal-ingredient-soup-primary-herbbundle-thyme": "Bündel-Thymian",
+
+  "block-muddygravel-*": "Matschiger Kies",
+
+  "block-sapling-ferntree-*": "Farnbaum-Sprössling",
+
+  "block-seaweed-top": "Seegras abschnitt"
+}

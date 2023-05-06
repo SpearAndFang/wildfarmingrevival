@@ -1,0 +1,644 @@
+{
+  "code": "trunk",
+  "entityClass": "TreeTrunk",
+  "class": "BlockTrunk",
+  "behaviors": [
+    {
+      "name": "PushEventOnBlockBroken",
+      "properties": { "eventName": "testForDecay" }
+    }
+  ],
+  "variantgroups": [
+    {
+      "code": "wood",
+      "states": [
+        "birch",
+        "oak",
+        "maple",
+        "pine",
+        "acacia",
+        "kapok",
+        "baldcypress",
+        "larch",
+        "redwood",
+        "ebony",
+        "walnut",
+        "purpleheart"
+      ]
+    }
+  ],
+  "creativeinventory": {
+    "general": [ "" ],
+    "flora": [ "" ],
+    "construction": [ "" ],
+    "wildfarming": [ "*" ]
+  },
+  "attributes": {
+    "handbook": {
+      "groupBy": [ "trunk-*" ]
+    }
+  },
+  "shapeByType": {
+    "*-redwood": { "base": "game:block/wood/log/section-nw" },
+    "*": { "base": "game:block/basic/cube" }
+  },
+  "blockmaterial": "Wood",
+  "requiredMiningTier": 1,
+  "attributes": {
+    "treeFriendsByType": {
+      "*": [
+        {
+          "blockCode": "mushroom-puffball-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 31,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-fieldmushroom-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 20,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-redwinecap-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 40,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-bitterbolete-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 21,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-chanterelle-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 29,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-deathcap-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 30,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-greencrackedrussula-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 22,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-indigomilkcap-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 40,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-jackolantern-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 35,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-kingbolete-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 34,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-lobster-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 40,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-flyagaric-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 33,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-almondmushroom-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 31,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-paddystraw-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 40,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-commonmorel-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 40,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-witchhat-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 30,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-elfinsaddle-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 30,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-earthball-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 30,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-devilstooth-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 30,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-orangeoakbolete-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 20,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-violetwebcap-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 22,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-devilbolete-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 40,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-blacktrumpet-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 31,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+        {
+          "blockCode": "mushroom-golddropmilkcap-normal",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 32,
+          "minRain": 0.4,
+          "weight": 0.1
+        },
+
+        {
+          "blockCode": "termitemound",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 50,
+          "minRain": 0,
+          "weight": 1
+        },
+        {
+          "blockCode": "flower-horsetail-free",
+          "OnGround": true,
+          "minTemp": 5,
+          "maxTemp": 50,
+          "minRain": 0.3,
+          "weight": 7
+        },
+        {
+          "blockCode": "tallfern",
+          "OnGround": true,
+          "minTemp": 25,
+          "maxTemp": 50,
+          "minRain": 0.7,
+          "weight": 15
+        },
+        {
+          "blockCode": "fern-eaglefern",
+          "OnGround": true,
+          "minTemp": 0,
+          "maxTemp": 30,
+          "minRain": 0.4,
+          "weight": 15
+        },
+        {
+          "blockCode": "fern-cinnamonfern",
+          "OnGround": true,
+          "minTemp": 0,
+          "maxTemp": 30,
+          "minRain": 0.75,
+          "weight": 15
+        },
+        {
+          "blockCode": "fern-deerfern",
+          "OnGround": true,
+          "minTemp": 2,
+          "maxTemp": 30,
+          "minRain": 0.75,
+          "weight": 15
+        },
+        {
+          "blockCode": "fern-hartstongue",
+          "OnGround": true,
+          "minTemp": 15,
+          "maxTemp": 40,
+          "minRain": 0.75,
+          "weight": 15
+        },
+
+        {
+          "blockCode": "mushroom-pinkoyster-normal-north",
+          "OnGround": false,
+          "reverseSide": true,
+          "minTemp": 15,
+          "maxTemp": 20,
+          "minRain": 0.4,
+          "weight": 2
+        },
+        {
+          "blockCode": "mushroom-dryadsaddle-normal-north",
+          "OnGround": false,
+          "reverseSide": true,
+          "minTemp": 5,
+          "maxTemp": 20,
+          "minRain": 0.4,
+          "weight": 2
+        },
+        {
+          "blockCode": "mushroom-beardedtooth-normal-north",
+          "OnGround": false,
+          "reverseSide": true,
+          "minTemp": 5,
+          "maxTemp": 40,
+          "minRain": 0.4,
+          "weight": 2
+        },
+        {
+          "blockCode": "mushroom-whiteoyster-normal-north",
+          "OnGround": false,
+          "reverseSide": true,
+          "minTemp": 5,
+          "maxTemp": 30,
+          "minRain": 0.4,
+          "weight": 2
+        },
+        {
+          "blockCode": "mushroom-tinderhoof-normal-north",
+          "OnGround": false,
+          "reverseSide": true,
+          "minTemp": 5,
+          "maxTemp": 20,
+          "minRain": 0.4,
+          "weight": 2
+        },
+        {
+          "blockCode": "mushroom-chickenofthewoods-normal-north",
+          "OnGround": false,
+          "reverseSide": true,
+          "minTemp": 5,
+          "maxTemp": 30,
+          "minRain": 0.4,
+          "weight": 2
+        },
+        {
+          "blockCode": "mushroom-reishi-normal-north",
+          "OnGround": false,
+          "reverseSide": true,
+          "minTemp": 10,
+          "maxTemp": 50,
+          "minRain": 0.4,
+          "weight": 2
+        },
+        {
+          "blockCode": "mushroom-funeralbell-normal-north",
+          "OnGround": false,
+          "reverseSide": true,
+          "minTemp": 5,
+          "maxTemp": 50,
+          "minRain": 0.4,
+          "weight": 2
+        },
+        {
+          "blockCode": "mushroom-deerear-normal-north",
+          "OnGround": false,
+          "reverseSide": true,
+          "minTemp": 5,
+          "maxTemp": 50,
+          "minRain": 0.4,
+          "weight": 2
+        },
+        {
+          "blockCode": "mushroom-livermushroom-normal-north",
+          "OnGround": false,
+          "reverseSide": true,
+          "minTemp": 10,
+          "maxTemp": 50,
+          "minRain": 0.4,
+          "weight": 2
+        },
+        {
+          "blockCode": "mushroom-pinkbonnet-normal-north",
+          "OnGround": false,
+          "reverseSide": true,
+          "minTemp": 5,
+          "maxTemp": 50,
+          "minRain": 0.4,
+          "weight": 2
+        },
+        {
+          "blockCode": "mushroom-shiitake-normal-north",
+          "OnGround": false,
+          "reverseSide": true,
+          "minTemp": 5,
+          "maxTemp": 33,
+          "minRain": 0.4,
+          "weight": 2
+        },
+
+        {
+          "blockCode": "wildvine-section-north",
+          "OnGround": false,
+          "minTemp": 2,
+          "maxTemp": 30,
+          "minRain": 0.4,
+          "weight": 5
+        },
+        {
+          "blockCode": "wildvine-end-north",
+          "OnGround": false,
+          "minTemp": 2,
+          "maxTemp": 30,
+          "minRain": 0.4,
+          "weight": 2
+        },
+
+        {
+          "blockCode": "hanginglichen-lace-bottom",
+          "OnGround": false,
+          "OnUnderneath": true,
+          "minTemp": 2,
+          "maxTemp": 30,
+          "minRain": 0.2,
+          "weight": 5
+        },
+        {
+          "blockCode": "hanginglichen-oldmans-bottom",
+          "OnGround": false,
+          "OnUnderneath": true,
+          "minTemp": 2,
+          "maxTemp": 30,
+          "minRain": 0.2,
+          "weight": 5
+        },
+        {
+          "blockCode": "wildbeehive-medium",
+          "OnGround": false,
+          "OnUnderneath": true,
+          "minTemp": 2,
+          "maxTemp": 30,
+          "minRain": 0.2,
+          "weight": 0.01
+        },
+        {
+          "blockCode": "wildbeehive-large",
+          "OnGround": false,
+          "OnUnderneath": true,
+          "minTemp": 2,
+          "maxTemp": 30,
+          "minRain": 0.2,
+          "weight": 0.005
+        }
+      ]
+    },
+    "minTempByType": {
+      "*-birch": -7,
+      "*-oak": -5,
+      "*-maple": -7,
+      "*-pine": -18,
+      "*-acacia": 21,
+      "*-kapok": 20,
+      "*-larch": -24,
+      "*-crimsonkingmaple": 1,
+      "*-redwood": 7,
+      "*-baldcypress": 8,
+      "*-greenspirecypress": 1,
+      "*-ebony": 21,
+      "*-purpleheart": 20,
+      "*-walnut": -1
+    },
+    "maxTempByType": {
+      "*-birch": 39,
+      "*-oak": 40,
+      "*-maple": 40,
+      "*-pine": 30,
+      "*-acacia": 60,
+      "*-kapok": 50,
+      "*-larch": 15,
+      "*-crimsonkingmaple": 26,
+      "*-redwood": 35,
+      "*-baldcypress": 41,
+      "*-greenspirecypress": 39,
+      "*-ebony": 50,
+      "*-purpleheart": 50,
+      "*-walnut": 39
+    },
+    "growthTimeByType": {
+      "*-ebony-*": 144,
+      "*-purpleheart-*": 120,
+      "*-walnut-*": 96,
+      "*-redwood-*": 240,
+      "*": 72
+    },
+    "deathStateByType": {
+      "*-redwood": "game:logsection-placed-{wood}-nw-ud",
+      "*": "game:log-placed-{wood}-ud"
+    },
+    "handbook": {
+      "exclude": true,
+      "groupBy": [ "trunk-{wood}" ]
+    },
+    "treeFellingGroupCode": "{wood}",
+    "treeFellingGroupSpreadIndex": 3,
+    "preventsDecay": true,
+    "treeGenByType": {
+      "*-birch": "silverbirch",
+      "*-oak": "englishoak",
+      "*-maple": "sugarmaple",
+      "*-pine": "scotspine",
+      "*-acacia": "acacia",
+      "*-kapok": "kapok",
+      "*-larch": "larch",
+      "*-crimsonkingmaple": "crimsonkingmaple",
+      "*-redwood": "redwoodpine",
+      "*-baldcypress": "baldcypress",
+      "*-greenspirecypress": "greenspirecypress",
+      "*-ebony": "ebony",
+      "*-purpleheart": "purpleheart",
+      "*-walnut": "walnut"
+    }
+  },
+  "texturesByType": {
+    "*-redwood": {
+      "bark": { "base": "game:block/wood/bark/{wood}-2x2" },
+      "wood": { "base": "game:block/wood/treetrunk/{wood}-2x2" },
+      "inside": { "base": "game:block/wood/debarked/redwood-2x2" },
+
+      "north": { "base": "game:block/wood/treetrunk/{wood}" },
+      "up": { "base": "game:block/wood/treetrunk/{wood}" },
+      "down": { "base": "game:block/wood/bark/{wood}" },
+      "east": { "base": "game:block/wood/bark/{wood}" },
+      "south": { "base": "game:block/wood/bark/{wood}" },
+      "west": { "base": "game:block/wood/bark/{wood}" },
+
+      "inside-north": { "base": "game:block/wood/debarked/{wood}" },
+      "inside-east": { "base": "game:block/wood/debarked/{wood}" },
+      "inside-south": { "base": "game:block/wood/debarked/{wood}" },
+      "inside-west": { "base": "game:block/wood/debarked/{wood}" }
+    },
+    "*": {
+      "all": { "base": "game:block/wood/bark/{wood}" },
+      "up": { "base": "game:block/wood/treetrunk/{wood}" },
+      "down": { "base": "game:block/wood/treetrunk/{wood}" }
+    }
+  },
+  "replaceable": 499,
+  "resistance": 4.5,
+  "sounds": {
+    "place": "game:block/planks",
+    "walk": "game:walk/wood",
+    "hit": "game:block/planks",
+    "break": "game:block/planks",
+    "byTool": {
+      "Axe": {
+        "hit": "game:block/chop",
+        "break": "game:block/planks"
+      }
+    }
+  },
+  "dropsByType": {
+    "*-redwood": [
+      {
+        "type": "block",
+        "code": "game:logsection-placed-{wood}-nw-ud",
+        "quantity": { "avg": 1 }
+      }
+    ],
+    "*": [
+      {
+        "type": "block",
+        "code": "game:log-placed-{wood}-ud",
+        "quantity": { "avg": 1 }
+      }
+    ]
+  },
+  "combustiblePropsByType": {
+    "trunk-*-birch": {
+      "burnTemperature": 800,
+      "burnDuration": 78
+    },
+    "trunk-*-oak": {
+      "burnTemperature": 800,
+      "burnDuration": 98
+    },
+    "trunk-*-ebony": {
+      "burnTemperature": 800,
+      "burnDuration": 110
+    },
+    "trunk-*-pine": {
+      "burnTemperature": 800,
+      "burnDuration": 60
+    },
+    "trunk-*-acacia": {
+      "burnTemperature": 800,
+      "burnDuration": 89
+    },
+    "trunk-*-kapok": {
+      "burnTemperature": 800,
+      "burnDuration": 47
+    },
+    "trunk-*-maple": {
+      "burnTemperature": 800,
+      "burnDuration": 79
+    },
+    "trunk-*-redwood": {
+      "burnTemperature": 800,
+      "burnDuration": 72
+    },
+    "trunk-*-aged": {
+      "burnTemperature": 700,
+      "burnDuration": 40
+    },
+    "*": {
+      "burnTemperature": 800,
+      "burnDuration": 72
+    }
+  },
+  "maxStackSize": 16,
+  "materialDensity": 700,
+  "heldTpIdleAnimation": "holdbothhandslarge",
+  "heldTpUseAnimation": "twohandplaceblock",
+  "tpHandTransform": {
+    "translation": {
+      "x": -1.2,
+      "y": -1.1,
+      "z": -0.8
+    },
+    "rotation": {
+      "x": -2,
+      "y": 25,
+      "z": -78
+    },
+    "scale": 0.37
+  }
+}

@@ -1,0 +1,546 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes/panningDrops/muddygravel",
+    "value": [
+      {
+        "type": "block",
+        "code": "game:seashell-scallop-latte",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-sundial-latte",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-turritella-latte",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-clam-latte",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-conch-latte",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-seastar-latte",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-volute-latte",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-scallop-plain",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-sundial-plain",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-turritella-plain",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-clam-plain",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-conch-plain",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-seastar-plain",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-volute-plain",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-scallop-seafoam",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-sundial-seafoam",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-turritella-seafoam",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-clam-seafoam",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-conch-seafoam",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-seastar-seafoam",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-volute-seafoam",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-scallop-darkpurple",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-sundial-darkpurple",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-turritella-darkpurple",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-clam-darkpurple",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-conch-darkpurple",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-seastar-darkpurple",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-volute-darkpurple",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-scallop-cinnamon",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-sundial-cinnamon",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-turritella-cinnamon",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-clam-cinnamon",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-conch-cinnamon",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-seastar-cinnamon",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-volute-cinnamon",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-scallop-turquoise",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-sundial-turquoise",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-turritella-turquoise",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-clam-turquoise",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-conch-turquoise",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-seastar-turquoise",
+        "chance": { "avg": 0.001 }
+      },
+      {
+        "type": "block",
+        "code": "game:seashell-volute-turquoise",
+        "chance": { "avg": 0.001 }
+      },
+
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-catmint-free",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-forgetmenot-free",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-edelweiss-free",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-horsetail-free",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-heather-free",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-wilddaisy-free",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-orangemallow-free",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-westerngorse-free",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-cowparsley-free",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-lilyofthevalley-free",
+        "chance": { "avg": 0.0005 }
+      },
+
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-lupine-blue-free",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-lupine-orange-free",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-lupine-purple-free",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-lupine-red-free",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-lupine-white-free",
+        "chance": { "avg": 0.0005 }
+      },
+
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-croton-small-crimson-green",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-croton-small-crimson-brown-green",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-croton-small-crimson-orange",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-croton-small-darkgreen-gold",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-croton-small-darkgreen-gold-crimson",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-croton-small-green-orange",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-croton-small-lemongreen",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-croton-small-lemongreen-crimson",
+        "chance": { "avg": 0.0005 }
+      },
+
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-croton-medium-crimson-green",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-croton-medium-crimson-brown-green",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-croton-medium-crimson-orange",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-croton-medium-darkgreen-gold",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-croton-medium-darkgreen-gold-crimson",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-croton-medium-green-orange",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-croton-medium-lemongreen",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-croton-medium-lemongreen-crimson",
+        "chance": { "avg": 0.0005 }
+      },
+
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-rafflesia-brown",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-flower-rafflesia-red",
+        "chance": { "avg": 0.0005 }
+      },
+
+      {
+        "type": "item",
+        "code": "game:treeseed-acacia",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:treeseed-birch",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:treeseed-kapok",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:treeseed-maple",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:treeseed-oak",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:treeseed-pine",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:treeseed-darkpine",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:treeseed-larch",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:treeseed-crimsonkingmaple",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:treeseed-redwood",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:treeseed-greenspirecypress",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:treeseed-baldcypress",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:treeseed-ebony",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:treeseed-walnut",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:treeseed-purpleheart",
+        "chance": { "avg": 0.0005 }
+      },
+
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-smallberrybush-cranberry-empty",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-smallberrybush-blueberry-empty",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-bigberrybush-redcurrant-empty",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-bigberrybush-whitecurrant-empty",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-bigberrybush-blackcurrant-empty",
+        "chance": { "avg": 0.0005 }
+      },
+
+      {
+        "type": "item",
+        "code": "game:seeds-carrot",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:seeds-flax",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:seeds-onion",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:seeds-spelt",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:seeds-turnip",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:seeds-parsnip",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:seeds-rice",
+        "chance": { "avg": 0.0005 }
+      },
+      { "type": "item", "code": "game:seeds-rye", "chance": { "avg": 0.0005 } },
+      {
+        "type": "item",
+        "code": "game:seeds-soybean",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "game:seeds-pumpkin",
+        "chance": { "avg": 0.0005 }
+      }
+    ],
+    "file": "game:blocktypes/wood/pan.json",
+    "condition": { "when": "WFseedPanningEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributes/pannable",
+    "value": true,
+    "file": "game:blocktypes/soil/muddygravel.json",
+    "condition": { "when": "WFseedPanningEnabled", "isValue": "true" }
+  }
+]

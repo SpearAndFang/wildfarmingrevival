@@ -1,0 +1,14 @@
+[
+  {
+    "op": "add",
+    "path": "/dropsByType/*-trunk/1",
+    "value": {
+      "type": "block",
+      "code": "sapling-ferntree-free",
+      "quantity": {
+        "avg": 0.5
+      }
+    },
+    "file": "game:blocktypes/plant/ferntree.json"
+  }
+]

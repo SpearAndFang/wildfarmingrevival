@@ -1,0 +1,35 @@
+{
+	// Japanese localization file for 'Wild Farming - Revival'.
+	// Mod Version: v1.0.2
+	// Translated By: Macoto Hino
+	// Machine translation using PCOT and DeepL.
+
+  "recipeingredient-item-herbbundle-basil-insturmentalcase": "バジル",
+  "recipeingredient-item-herbbundle-chamomile-insturmentalcase": "カモミール",
+  "recipeingredient-item-herbbundle-cilantro-insturmentalcase": "コリアンダー",
+  "recipeingredient-item-herbbundle-lavender-insturmentalcase": "ラベンダー",
+  "recipeingredient-item-herbbundle-marjoram-insturmentalcase": "マジョラム",
+  "recipeingredient-item-herbbundle-mint-insturmentalcase": "ミント",
+  "recipeingredient-item-herbbundle-saffron-insturmentalcase": "サフラン",
+  "recipeingredient-item-herbbundle-sage-insturmentalcase": "セイジ",
+  "recipeingredient-item-herbbundle-thyme-insturmentalcase": "タイム",
+
+  "meal-ingredient-soup-primary-herbbundle-basil": "バジル",
+  "meal-ingredient-soup-primary-herbbundle-chamomile": "カモミール",
+  "meal-ingredient-soup-primary-herbbundle-cilantro": "コリアンダー",
+  "meal-ingredient-soup-primary-herbbundle-lavender": "ラベンダー",
+  "meal-ingredient-soup-primary-herbbundle-marjoram": "マジョラム",
+  "meal-ingredient-soup-primary-herbbundle-mint": "ミント",
+  "meal-ingredient-soup-primary-herbbundle-saffron": "サフラン",
+  "meal-ingredient-soup-primary-herbbundle-sage": "セイジ",
+  "meal-ingredient-soup-primary-herbbundle-thyme": "タイム",
+
+  "block-muddygravel-*" : "泥の砂利",
+
+  "block-sapling-ferntree-*" : "シダの木の苗木",
+
+  "block-seaweed-top": "海藻の切り落とし"
+
+
+
+}

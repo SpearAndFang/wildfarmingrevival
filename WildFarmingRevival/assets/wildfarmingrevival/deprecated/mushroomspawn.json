@@ -1,0 +1,11 @@
+{
+	code: "mushroomspawn",
+	class: "ItemMushroomSpawn",
+	creativeinventory: { "general": ["*"] },
+	maxstacksize : 64,
+	variantgroups: [
+		{ code: "flower", loadFromProperties: "block/mushroom"}
+	],
+
+	texture: {base: "item/wildseeds", overlays: ["item/wildseeds-overlay-mushroomspawn"]}
+}

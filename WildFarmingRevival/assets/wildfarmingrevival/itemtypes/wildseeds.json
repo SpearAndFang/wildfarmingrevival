@@ -1,0 +1,34 @@
+{
+  "code": "wildseeds",
+  "class": "wildseed",
+  "creativeinventory": {
+    "general": [ "*-free" ],
+    "items": [ "*-free" ],
+    "wildfarming": [ "*-free" ]
+  },
+  "attributes": {
+    "handbook": {
+      "groupBy": [ "wildseeds-*" ]
+    }
+  },
+  "maxstacksize": 64,
+  "variantgroups": [
+    {
+      "code": "type",
+      "states": [ "flower" ]
+    },
+    {
+      "code": "flower",
+      "loadFromProperties": "block/flower"
+    },
+    {
+      "code": "cover",
+      "states": [ "free", "snow" ]
+    }
+  ],
+
+  "texture": {
+    "base": "item/wildseeds",
+    "overlays": [ "item/wildseeds-overlay-flower" ]
+  }
+}

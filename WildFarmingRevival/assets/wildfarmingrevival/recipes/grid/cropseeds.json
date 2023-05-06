@@ -1,0 +1,86 @@
+[
+  {
+    "ingredientPattern": "K,H",
+    "enabled": true,
+    "shapeless": true,
+    "ingredients": {
+      "K": { "type": "block", "code": "game:pan-wooden", "isTool": true },
+      "H": {
+        "type": "item",
+        "code": "game:grain-*",
+        "quantity": 2,
+        "name": "type",
+        "allowedVariants": [
+          "flax",
+          "rice",
+          "rye",
+          "spelt",
+          "amaranth",
+          "sunflower"
+        ]
+      }
+    },
+    "name": "grainseeds",
+    "width": 1,
+    "height": 2,
+    "output": { "type": "item", "code": "game:seeds-{type}", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "K,H",
+    "enabled": true,
+    "shapeless": true,
+    "ingredients": {
+      "K": { "type": "item", "code": "game:shears-*", "isTool": true },
+      "H": {
+        "type": "item",
+        "code": "game:vegetable-*",
+        "quantity": 2,
+        "name": "type",
+        "allowedVariants": [
+          "carrot",
+          "cabbage",
+          "onion",
+          "turnip",
+          "parsnip",
+          "bellpepper"
+        ]
+      }
+    },
+    "name": "vegetableseeds",
+    "width": 1,
+    "height": 2,
+    "output": { "type": "item", "code": "game:seeds-{type}", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "K,H",
+    "enabled": true,
+    "shapeless": true,
+    "ingredients": {
+      "K": { "type": "item", "code": "game:shears-*", "isTool": true },
+      "H": {
+        "type": "item",
+        "code": "game:legume-*",
+        "quantity": 2,
+        "name": "type",
+        "allowedVariants": ["peanut", "soybean"]
+      }
+    },
+    "name": "vegetableseeds",
+    "width": 1,
+    "height": 2,
+    "output": { "type": "item", "code": "game:seeds-{type}", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "K,H",
+    "enabled": true,
+    "shapeless": true,
+    "ingredients": {
+      "K": { "type": "item", "code": "game:shears-*", "isTool": true },
+      "H": { "type": "item", "code": "game:rawcassava-raw", "quantity": 1 }
+    },
+    "name": "vegetableseeds",
+    "width": 1,
+    "height": 2,
+    "output": { "type": "item", "code": "game:seeds-cassava", "quantity": 1 }
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "ingredientPattern": "GLG,SLS,HWH",
+    "ingredients": {
+      "W": {
+        "type": "block",
+        "code": "game:woodbucket"
+      },
+      "L": {
+        "type": "block",
+        "code": "game:log-*"
+      },
+      "S": {
+        "type": "block",
+        "code": "game:soil-*-none",
+        "allowedVariants": ["high", "compost"]
+      },
+      "G": {
+        "type": "item",
+        "code": "game:grain-*",
+        "quantity": 4
+      },
+      "H": {
+        "type": "item",
+        "code": "game:drygrass",
+        "quantity": 4
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": { "type": "item", "code": "game:alcoholportion" },
+        "requiresLitres": 1
+      }
+    },
+    "output": {
+      "type": "block",
+      "code": "wildfarmingrevival:mushroomsubstrate"
+    }
+  }
+]

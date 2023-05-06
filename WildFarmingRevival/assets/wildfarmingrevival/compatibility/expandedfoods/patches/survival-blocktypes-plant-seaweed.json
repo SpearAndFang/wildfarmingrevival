@@ -1,0 +1,19 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes",
+    "value": {
+      "minTemp": 2,
+      "hours": 168
+    },
+    "file": "game:blocktypes/plant/seaweed.json"
+  },
+  {
+    "op": "add",
+    "path": "/entityclassByType",
+    "value": {
+      "*-top": "BESeaweed"
+    },
+    "file": "game:blocktypes/plant/seaweed.json"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "recipeingredient-item-herbbundle-basil-insturmentalcase": "basil",
+  "recipeingredient-item-herbbundle-chamomile-insturmentalcase": "chamomile",
+  "recipeingredient-item-herbbundle-cilantro-insturmentalcase": "cilantro",
+  "recipeingredient-item-herbbundle-lavender-insturmentalcase": "lavender",
+  "recipeingredient-item-herbbundle-marjoram-insturmentalcase": "marjoram",
+  "recipeingredient-item-herbbundle-mint-insturmentalcase": "mint",
+  "recipeingredient-item-herbbundle-saffron-insturmentalcase": "saffron",
+  "recipeingredient-item-herbbundle-sage-insturmentalcase": "sage",
+  "recipeingredient-item-herbbundle-thyme-insturmentalcase": "thyme",
+
+  "meal-ingredient-soup-primary-herbbundle-basil": "Basil",
+  "meal-ingredient-soup-primary-herbbundle-chamomile": "Chamomile",
+  "meal-ingredient-soup-primary-herbbundle-cilantro": "Cilantro",
+  "meal-ingredient-soup-primary-herbbundle-lavender": "Lavender",
+  "meal-ingredient-soup-primary-herbbundle-marjoram": "Marjoram",
+  "meal-ingredient-soup-primary-herbbundle-mint": "Mint",
+  "meal-ingredient-soup-primary-herbbundle-saffron": "Saffron",
+  "meal-ingredient-soup-primary-herbbundle-sage": "Sage",
+  "meal-ingredient-soup-primary-herbbundle-thyme": "Thyme",
+
+  "block-muddygravel-*": "Muddy gravel",
+
+  "block-sapling-ferntree-*": "Fern Tree Sapling",
+
+  "block-seaweed-top": "Seaweed Trimmings"
+}

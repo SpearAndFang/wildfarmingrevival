@@ -1,0 +1,50 @@
+[
+  {
+    "ingredientPattern": "WF",
+    "ingredients": {
+      "W": {
+        "type": "block",
+        "code": "game:woodbucket"
+      },
+      "F": {
+        "type": "item",
+        "code": "game:cattailroot"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": { "type": "item", "code": "game:waterportion" },
+        "requiresQuantity": 10
+      }
+    },
+    "name": "roots",
+    "shapeless": true,
+    "output": { "type": "item", "code": "game:cattailroot", "quantity": 2 }
+  },
+  {
+    "ingredientPattern": "WF",
+    "ingredients": {
+      "W": {
+        "type": "block",
+        "code": "game:woodbucket"
+      },
+      "F": {
+        "type": "item",
+        "code": "game:papyrusroot"
+      }
+    },
+    "width": 1,
+    "height": 2,
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": { "type": "item", "code": "game:waterportion" },
+        "requiresQuantity": 10
+      }
+    },
+    "name": "roots",
+    "shapeless": true,
+    "output": { "type": "item", "code": "game:papyrusroot", "quantity": 2 }
+  }
+]

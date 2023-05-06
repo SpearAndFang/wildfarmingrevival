@@ -1,0 +1,40 @@
+[
+  {
+    "op": "add",
+    "path": "/entityclassByType",
+    "value": {
+      "*-topempty": "Transient",
+      "*-topflowering": "Transient"
+    },
+    "file": "game:blocktypes/plant/saguarocactus.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/transientPropsByType",
+    "value": {
+      "*-topempty": {
+        "convertFrom": "*",
+        "convertTo": "saguarocactus-topflowering",
+        "inGameHours": "120"
+      },
+      "*-topflowering": {
+        "convertFrom": "*",
+        "convertTo": "saguarocactus-topripe",
+        "inGameHours": "120"
+      }
+    },
+    "file": "game:blocktypes/plant/saguarocactus.json"
+  },
+  {
+    "op": "add",
+    "path": "/dropsByType/*/0",
+    "value": {
+      "type": "item",
+      "code": "wildfarmingrevival:wildseeds-saguarocactus-topempty",
+      "quantity": {
+        "avg": 0.2
+      }
+    },
+    "file": "game:blocktypes/plant/saguarocactus.json"
+  }
+]

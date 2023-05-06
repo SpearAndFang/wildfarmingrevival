@@ -1,0 +1,22 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes",
+    "value": {
+      "hours": 96,
+      "minTemp": 5,
+      "maxTemp": 50
+    },
+    "file": "game:blocktypes/plant/seaweed.json",
+    "condition": { "when": "WFseaweedEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/entityclassByType",
+    "value": {
+      "*-top": "BESeaweed"
+    },
+    "file": "game:blocktypes/plant/seaweed.json",
+    "condition": { "when": "WFseaweedEnabled", "isValue": "true" }
+  }
+]

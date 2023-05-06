@@ -1,0 +1,54 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "Harvestable",
+        "properties": {
+          "harvestTime": 0.6,
+          "harvestedStack": {
+            "type": "item",
+            "code": "herbbundle-{herb}",
+            "quantityByType": {
+              "*-sage": { "avg": 6 },
+              "*-cilantro": { "avg": 2 },
+              "*-lavender": { "avg": 2 },
+              "*-mint": { "avg": 2 },
+              "*": { "avg": 1 }
+            }
+          },
+          "harvestedBlockCode": "wildfarmingrevival:wildplant-herb-{herb}"
+        }
+      }
+    ],
+    "file": "game:blocktypes/plant/herb.json"
+  },
+  {
+    "op": "replace",
+    "value": {},
+    "path": "/attributes/handbook",
+    "file": "game:blocktypes/plant/herb.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/forageStatAffected",
+    "value": true,
+    "file": "game:blocktypes/plant/herb.json"
+  },
+  {
+    "op": "add",
+    "path": "/drops",
+    "value": [
+      {
+        "type": "item",
+        "code": "herbbundle-{herb}",
+        "quantity": {
+          "avg": 1.5,
+          "var": 0.5
+        }
+      }
+    ],
+    "file": "game:blocktypes/plant/herb.json"
+  }
+]

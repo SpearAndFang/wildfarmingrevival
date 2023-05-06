@@ -1,0 +1,182 @@
+[
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "game:herbbundle-basil",
+      "shapeElement": "bowl/vegetable 3/*"
+    },
+    "file": "game:recipes/cooking/vegetablestew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "game:herbbundle-chamomile",
+      "shapeElement": "bowl/vegetable 3/*"
+    },
+    "file": "game:recipes/cooking/vegetablestew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "game:herbbundle-cilantro",
+      "shapeElement": "bowl/vegetable 3/*"
+    },
+    "file": "game:recipes/cooking/vegetablestew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "game:herbbundle-lavender",
+      "shapeElement": "bowl/vegetable 3/*"
+    },
+    "file": "game:recipes/cooking/vegetablestew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "game:herbbundle-marjoram",
+      "shapeElement": "bowl/vegetable 3/*"
+    },
+    "file": "game:recipes/cooking/vegetablestew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "game:herbbundle-mint",
+      "shapeElement": "bowl/vegetable 3/*"
+    },
+    "file": "game:recipes/cooking/vegetablestew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "game:herbbundle-saffron",
+      "shapeElement": "bowl/vegetable 3/*"
+    },
+    "file": "game:recipes/cooking/vegetablestew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "game:herbbundle-sage",
+      "shapeElement": "bowl/vegetable 3/*"
+    },
+    "file": "game:recipes/cooking/vegetablestew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/2/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "game:herbbundle-thyme",
+      "shapeElement": "bowl/vegetable 3/*"
+    },
+    "file": "game:recipes/cooking/vegetablestew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/3/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "game:herbbundle-basil",
+      "shapeElement": "bowl/vegetable 4/*"
+    },
+    "file": "game:recipes/cooking/vegetablestew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/3/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "game:herbbundle-chamomile",
+      "shapeElement": "bowl/vegetable 4/*"
+    },
+    "file": "game:recipes/cooking/vegetablestew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/3/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "game:herbbundle-cilantro",
+      "shapeElement": "bowl/vegetable 4/*"
+    },
+    "file": "game:recipes/cooking/vegetablestew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/3/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "game:herbbundle-lavender",
+      "shapeElement": "bowl/vegetable 4/*"
+    },
+    "file": "game:recipes/cooking/vegetablestew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/3/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "game:herbbundle-marjoram",
+      "shapeElement": "bowl/vegetable 4/*"
+    },
+    "file": "game:recipes/cooking/vegetablestew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/3/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "game:herbbundle-mint",
+      "shapeElement": "bowl/vegetable 4/*"
+    },
+    "file": "game:recipes/cooking/vegetablestew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/3/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "game:herbbundle-saffron",
+      "shapeElement": "bowl/vegetable 4/*"
+    },
+    "file": "game:recipes/cooking/vegetablestew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/3/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "game:herbbundle-sage",
+      "shapeElement": "bowl/vegetable 4/*"
+    },
+    "file": "game:recipes/cooking/vegetablestew.json"
+  },
+  {
+    "op": "add",
+    "path": "/ingredients/3/validStacks/-",
+    "value": {
+      "type": "item",
+      "code": "game:herbbundle-thyme",
+      "shapeElement": "bowl/vegetable 4/*"
+    },
+    "file": "game:recipes/cooking/vegetablestew.json"
+  }
+]

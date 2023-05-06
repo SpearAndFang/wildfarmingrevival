@@ -1,0 +1,87 @@
+{
+  "code": "wildplant",
+  "entityClass": "WildPlant",
+  "variantgroups": [
+    { "code": "type", "states": ["herb"] },
+    { "code": "herb", "loadFromProperties": "block/herb" }
+  ],
+  "drawtype": "JSON",
+  "replaceable": 5000,
+  "behaviors": [{ "name": "Unstable" }],
+  "attributes": {
+    "hoursByType": {
+      "*-basil": 120,
+      "*-chamomile": 144,
+      "*-cilantro": 192,
+      "*-lavender": 192,
+      "*-marjoram": 96,
+      "*-mint": 192,
+      "*-saffron": 144,
+      "*-sage": 384,
+      "*-thyme": 120
+    },
+    "minTempByType": {
+      "*-basil": 15,
+      "*-chamomile": 0,
+      "*-cilantro": -2,
+      "*-lavender": -1,
+      "*-marjoram": 1,
+      "*-mint": -10,
+      "*-saffron": -5,
+      "*-sage": -10,
+      "*-thyme": -10
+    },
+    "maxTempByType": {
+      "*-basil": 37,
+      "*-chamomile": 42,
+      "*-cilantro": 34,
+      "*-lavender": 37,
+      "*-marjoram": 34,
+      "*-mint": 27,
+      "*-saffron": 40,
+      "*-sage": 30,
+      "*-thyme": 42
+    },
+    "handbook": {
+      "exclude": true
+    }
+  },
+  "drops": [
+    { "type": "item", "code": "wildfarmingrevival:wildseeds-{type}-{herb}" }
+  ],
+  "frostable": true,
+  "combustibleProps": {
+    "burnTemperature": 600,
+    "burnDuration": 5
+  },
+  "climateColorMap": "climatePlantTint",
+  "seasonColorMap": "seasonalFoliage",
+  "blockmaterial": "Plant",
+  "shape": { "base": "game:block/basic/cross-short" },
+  "renderpass": "OpaqueNoCull",
+  "lightAbsorption": 0,
+  "sideopaque": {
+    "all": false
+  },
+  "collisionbox": null,
+  "selectionbox": {
+    "x1": 0.125,
+    "y1": 0,
+    "z1": 0.125,
+    "x2": 0.875,
+    "y2": 0.25,
+    "z2": 0.875
+  },
+  "sidesolid": {
+    "all": false
+  },
+  "textures": {
+    "all": { "base": "block/wildplant" }
+  },
+  "resistance": 0.5,
+  "sounds": {
+    "place": "game:block/plant",
+    "break": "game:block/plant",
+    "hit": "game:block/plant"
+  }
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "ingredientPattern": "K,H",
+    "enabled": true,
+    "shapeless": true,
+    "ingredients": {
+      "K": { "type": "item", "code": "game:knife-*", "isTool": true },
+      "H": {
+        "type": "block",
+        "code": "game:flower-*",
+        "quantity": 1,
+        "name": "type"
+      }
+    },
+    "name": "flowerseeds",
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "wildfarmingrevival:wildseeds-flower-{type}",
+      "quantity": 3
+    }
+  },
+  {
+    "ingredientPattern": "K,H",
+    "enabled": true,
+    "shapeless": true,
+    "ingredients": {
+      "K": { "type": "item", "code": "game:knife-*", "isTool": true },
+      "H": {
+        "type": "block",
+        "code": "game:fern-*",
+        "quantity": 1,
+        "name": "type"
+      }
+    },
+    "name": "fernseeds",
+    "width": 1,
+    "height": 2,
+    "output": {
+      "type": "item",
+      "code": "wildfarmingrevival:wildseeds-fern-{type}",
+      "quantity": 3
+    }
+  }
+]

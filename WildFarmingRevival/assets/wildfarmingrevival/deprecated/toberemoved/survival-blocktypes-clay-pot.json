@@ -1,0 +1,83 @@
+[
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/herbbundle-basil",
+    "value": [
+      "vegetable",
+      "group10"
+    ],
+    "file": "game:blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/herbbundle-chamomile",
+    "value": [
+      "vegetable",
+      "group10"
+    ],
+    "file": "game:blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/herbbundle-cilantro",
+    "value": [
+      "vegetable",
+      "group10"
+    ],
+    "file": "game:blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/herbbundle-lavender",
+    "value": [
+      "vegetable",
+      "group10"
+    ],
+    "file": "game:blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/herbbundle-marjoram",
+    "value": [
+      "vegetable",
+      "group10"
+    ],
+    "file": "game:blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/herbbundle-mint",
+    "value": [
+      "vegetable",
+      "group10"
+    ],
+    "file": "game:blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/herbbundle-saffron",
+    "value": [
+      "vegetable",
+      "group10"
+    ],
+    "file": "game:blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/herbbundle-sage",
+    "value": [
+      "vegetable",
+      "group10"
+    ],
+    "file": "game:blocktypes/clay/pot.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/claypot-cooked/textureMapping/herbbundle-thyme",
+    "value": [
+      "vegetable",
+      "group10"
+    ],
+    "file": "game:blocktypes/clay/pot.json"
+  },
+]

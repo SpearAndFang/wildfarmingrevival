@@ -1,0 +1,11 @@
+{
+  "code": "mushroomsubstrateincubated",
+  "creativeinventory": {
+    "general": [""]
+  },
+  "shape": { "base": "game:block/basic/cube" },
+  "drawtype": "json",
+  "textures": {
+    "all": { "base": "game:block/soil/flooring/strawbedding2*" }
+  }
+}

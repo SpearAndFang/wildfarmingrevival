@@ -1,0 +1,11 @@
+{
+  "type": "code",
+  "modid": "wildfarmingrevival",
+  "name": "Wild Farming Revival",
+  "description": "Cultivate flowers, herbs, mushrooms, and bushes!",
+  "authors": ["jakecool19", "SpearAndFang"],
+  "version": "1.0.5",
+  "dependencies": {
+    "game": ""
+  }
+}

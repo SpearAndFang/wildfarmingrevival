@@ -1,0 +1,54 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes/needsTreeByType",
+    "value": {
+      "*-witchhat-*": "decidious",
+      "*-elfinsaddle-*": "conifer",
+      "*-earthball-*": "conifer",
+      "*-devilstooth-*": "conifer",
+      "*-orangeoakbolete-*": "decidious",
+      "*-violetwebcap-*": "decidious",
+      "*-devilbolete-*": "decidious",
+      "*-blacktrumpet-*": "decidious",
+      "*-golddropmilkcap-*": "decidious"
+    },
+    "file": "game:blocktypes/plant/mushroom.json"
+  },
+  {
+    "op": "replace",
+    "path": "/class",
+    "value": "BlockEnhancedMushroom",
+    "file": "game:blocktypes/plant/mushroom.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/needsTreeByType",
+    "value": {
+      "*-beardedtooth-*": "decidious",
+      "*-whiteoyster-*": "conifer",
+      "*-tinderhoof-*": "decidious",
+      "*-chickenofthewoods-*": "decidious",
+      "*-reishi-*": "decidious",
+      "*-funeralbell-*": "conifer",
+      "*-deerear-*": "tropical",
+      "*-livermushroom-*": "tropical",
+      "*-pinkbonnet-*": "tropical",
+      "*-shiitake-*": "decidious"
+    },
+    "file": "game:blocktypes/plant/mushroom-side.json"
+  },
+  {
+    "op": "replace",
+    "path": "/class",
+    "value": "BlockEnhancedMushroom",
+    "file": "game:blocktypes/plant/mushroom-side.json"
+  },
+  {
+    "op": "add",
+    "path": "/entityClass",
+    "value": "TermiteMound",
+    "file": "game:blocktypes/soil/termitemound.json",
+    "condition": { "when": "WFtermitesEnabled", "isValue": "true" }
+  }
+]

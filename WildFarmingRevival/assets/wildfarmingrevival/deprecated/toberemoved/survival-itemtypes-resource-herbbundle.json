@@ -1,0 +1,61 @@
+[
+  {
+    "op": "replace",
+    "path": "/attributes/handbook",
+    "value": {},
+    "file": "game:itemtypes/resource/herbbundle.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/nutritionPropsWhenInMealByType",
+    "value": {
+      "*-sage": {
+        "satiety": 175,
+        "foodcategory": "Vegetable",
+        "health": 1.75
+      },
+      "*-cilantro": {
+        "satiety": 75,
+        "foodcategory": "Vegetable",
+        "health": 0.75
+      },
+      "*-lavender": {
+        "satiety": 75,
+        "foodcategory": "Vegetable",
+        "health": 0.75
+      },
+      "*-mint": {
+        "satiety": 75,
+        "foodcategory": "Vegetable",
+        "health": 0.75
+      },
+      "*":{
+        "satiety": 50,
+        "foodcategory": "Vegetable",
+        "health": 0.5
+      },
+    },
+    "file": "game:itemtypes/resource/herbbundle.json"
+  },
+  {
+    "op": "add",
+    "path": "/transitionableProps",
+    "value": [
+      {
+        "type": "Perish",
+        "freshHours": {
+          "avg": 480
+        },
+        "transitionHours": {
+          "avg": 72
+        },
+        "transitionedStack": {
+          "type": "item",
+          "code": "rot"
+        },
+        "transitionRatio": 1
+      }
+    ],
+    "file": "game:itemtypes/resource/herbbundle.json"
+  }
+]

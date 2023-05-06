@@ -1,0 +1,79 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes/treeGenByType/*-ferntree-*",
+    "value": "ferntree-normal-trunk",
+    "file": "game:blocktypes/plant/plaintreesapling.json"
+  },
+  {
+    "op": "add",
+    "path": "/variantgroups/0/states/4",
+    "value": "ferntree",
+    "file": "game:blocktypes/plant/plaintreesapling.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/maxTempByType",
+    "value": {
+      "*-birch": 39,
+      "*-oak": 40,
+      "*-maple": 40,
+      "*-pine": 30,
+      "*-acacia": 60,
+      "*-kapok": 50,
+      "*-greenbamboo": 120,
+      "*-brownbamboo": 120,
+      "*-larch": 15,
+      "*-crimsonkingmaple": 26,
+      "*-redwood": 35,
+      "*-baldcypress": 41,
+      "*-greenspirecypress": 39,
+      "*-ebony": 50,
+      "*-purpleheart": 50,
+      "*-walnut": 39
+    },
+    "file": "game:blocktypes/plant/plaintreesapling.json"
+  },
+  {
+    "op": "add",
+    "path": "/attributes/minTempByType",
+    "value": {
+      "*-birch-*": -7,
+      "*-oak-*": -5,
+      "*-maple-*": -7,
+      "*-pine-*": -18,
+      "*-acacia-*": 21,
+      "*-kapok-*": 20,
+      "*-larch-*": -24,
+      "*-crimsonkingmaple-*": 1,
+      "*-redwood-*": 7,
+      "*-baldcypress-*": 8,
+      "*-greenspirecypress-*": 1,
+      "*-ebony-*": 21,
+      "*-purpleheart-*": 20,
+      "*-walnut-*": -1,
+      "*-greenbamboo-*": 27,
+      "*-brownbamboo-*": 22,
+      "*-ferntree-*": 19
+    },
+    "file": "game:blocktypes/plant/plaintreesapling.json"
+  },
+  {
+    "op": "move",
+    "frompath": "/entityclassByType/*",
+    "path": "/move-temp",
+    "file": "game:blocktypes/plant/plaintreesapling.json"
+  },
+  {
+    "op": "add",
+    "path": "/entityclassByType/@sapling-(birch|oak|maple|pine|acacia|kapok|larch|crimsonkingmaple|redwood|baldcypress|ebony|purpleheart|walnut)-.*",
+    "value": "RegenSapling",
+    "file": "game:blocktypes/plant/plaintreesapling.json"
+  },
+  {
+    "op": "move",
+    "frompath": "/move-temp",
+    "path": "/entityclassByType/*",
+    "file": "game:blocktypes/plant/plaintreesapling.json"
+  }
+]

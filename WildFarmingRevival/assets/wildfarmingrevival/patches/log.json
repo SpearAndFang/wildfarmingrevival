@@ -1,0 +1,14 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviorsByType/*-grown-*/-",
+    "value": {
+        "name": "Score",
+        "properties": {
+          "scoreTime": 3
+        }
+      },
+    "file": "game:blocktypes/wood/woodtyped/log.json",
+    "condition": { "when": "WFlogScoringEnabled", "isValue": "true" }
+  }
+]

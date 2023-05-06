@@ -1,0 +1,191 @@
+[
+  {
+    "op": "add",
+    "path": "/patches/-",
+    "value": {
+      "comment": "Small patches of basil",
+      "blockCodes": [
+        "herb-basil"
+      ],
+      "minTemp": 20,
+      "maxTemp": 32,
+      "minRain": 0.6,
+      "maxRain": 1,
+      "maxForest": 1,
+      "quantity": {
+        "avg": 5,
+        "var": 5
+      },
+      "chance": 0.01
+    },
+    "file": "game:worldgen/blockpatches.json"
+  },
+  {
+    "op": "add",
+    "path": "/patches/-",
+    "value": {
+      "comment": "Small patches of chamomile",
+      "blockCodes": [
+        "herb-chamomile"
+      ],
+      "minTemp": -10,
+      "maxTemp": 37,
+      "minRain": 0.25,
+      "maxRain": 0.35,
+      "maxForest": 0.85,
+      "quantity": {
+        "avg": 5,
+        "var": 5
+      },
+      "chance": 0.01
+    },
+    "file": "game:worldgen/blockpatches.json"
+  },
+  {
+    "op": "add",
+    "path": "/patches/-",
+    "value": {
+      "comment": "Small patches of cilantro",
+      "blockCodes": [
+        "herb-cilantro"
+      ],
+      "minTemp": -12,
+      "maxTemp": 29,
+      "minRain": 0.25,
+      "maxRain": 0.35,
+      "maxForest": 0.75,
+      "quantity": {
+        "avg": 5,
+        "var": 5
+      },
+      "chance": 0.01
+    },
+    "file": "game:worldgen/blockpatches.json"
+  },
+  {
+    "op": "add",
+    "path": "/patches/-",
+    "value": {
+      "comment": "Small patches of lavender",
+      "blockCodes": [
+        "herb-lavender"
+      ],
+      "minTemp": -5,
+      "maxTemp": 32,
+      "minRain": 0.1,
+      "maxRain": 0.85,
+      "maxForest": 0.3,
+      "quantity": {
+        "avg": 5,
+        "var": 5
+      },
+      "chance": 0.01
+    },
+    "file": "game:worldgen/blockpatches.json"
+  },
+  {
+    "op": "add",
+    "path": "/patches/-",
+    "value": {
+      "comment": "Small patches of marjoram",
+      "blockCodes": [
+        "herb-marjoram"
+      ],
+      "minTemp": 6,
+      "maxTemp": 29,
+      "minRain": 0.3,
+      "maxRain": 0.8,
+      "maxForest": 0.8,
+      "quantity": {
+        "avg": 5,
+        "var": 5
+      },
+      "chance": 0.01
+    },
+    "file": "game:worldgen/blockpatches.json"
+  },
+  {
+    "op": "add",
+    "path": "/patches/-",
+    "value": {
+      "comment": "Small patches of mint",
+      "blockCodes": [
+        "herb-mint"
+      ],
+      "minTemp": -20,
+      "maxTemp": 21,
+      "minRain": 0.4,
+      "maxRain": 0.9,
+      "maxForest": 0.9,
+      "quantity": {
+        "avg": 8,
+        "var": 5
+      },
+      "chance": 0.01
+    },
+    "file": "game:worldgen/blockpatches.json"
+  },
+  {
+    "op": "add",
+    "path": "/patches/-",
+    "value": {
+      "comment": "Small patches of saffron",
+      "blockCodes": [
+        "herb-saffron"
+      ],
+      "minTemp": -15,
+      "maxTemp": 35,
+      "minRain": 0.3,
+      "maxRain": 0.6,
+      "maxForest": 0.8,
+      "quantity": {
+        "avg": 3,
+        "var": 2
+      },
+      "chance": 0.01
+    },
+    "file": "game:worldgen/blockpatches.json"
+  },
+  {
+    "op": "add",
+    "path": "/patches/-",
+    "value": {
+      "comment": "Small patches of sage",
+      "blockCodes": [
+        "herb-sage"
+      ],
+      "minTemp": -15,
+      "maxTemp": 15,
+      "minRain": 0.4,
+      "maxRain": 0.9,
+      "maxForest": 0.9,
+      "quantity": {
+        "avg": 5,
+        "var": 5
+      },
+      "chance": 0.01
+    },
+    "file": "game:worldgen/blockpatches.json"
+  },
+  {
+    "op": "add",
+    "path": "/patches/-",
+    "value": {
+      "comment": "Small patches of thyme",
+      "blockCodes": [
+        "herb-thyme"
+      ],
+      "minTemp": -20,
+      "maxTemp": 37,
+      "minRain": 0.3,
+      "maxRain": 0.6,
+      "maxForest": 0.3,
+      "quantity": {
+        "avg": 5,
+        "var": 5
+      },
+      "chance": 0.01
+    },
+    "file": "game:worldgen/blockpatches.json"
+  }
+]
