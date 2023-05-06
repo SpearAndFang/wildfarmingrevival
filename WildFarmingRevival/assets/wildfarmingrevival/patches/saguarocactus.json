@@ -6,7 +6,8 @@
       "*-topempty": "Transient",
       "*-topflowering": "Transient"
     },
-    "file": "game:blocktypes/plant/saguarocactus.json"
+    "file": "game:blocktypes/plant/saguarocactus.json",
+    "side": "server"
   },
   {
     "op": "add",
@@ -23,7 +24,8 @@
         "inGameHours": "120"
       }
     },
-    "file": "game:blocktypes/plant/saguarocactus.json"
+    "file": "game:blocktypes/plant/saguarocactus.json",
+    "side": "server"
   },
   {
     "op": "add",
@@ -35,6 +37,7 @@
         "avg": 0.2
       }
     },
-    "file": "game:blocktypes/plant/saguarocactus.json"
+    "file": "game:blocktypes/plant/saguarocactus.json",
+    "side": "server"
   }
 ]

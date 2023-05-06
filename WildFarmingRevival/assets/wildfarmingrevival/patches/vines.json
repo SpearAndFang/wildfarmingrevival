@@ -6,27 +6,43 @@
       "*-end-*": "BEVines"
     },
     "file": "game:blocktypes/plant/wildvine.json",
-    "condition": { "when": "WFvinesEnabled", "isValue": "true" }
+    "condition": {
+      "when": "WFvinesEnabled",
+      "isValue": "true"
+    },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/attributes/hours",
     "value": 96,
     "file": "game:blocktypes/plant/wildvine.json",
-    "condition": { "when": "WFvinesEnabled", "isValue": "true" }
+    "condition": {
+      "when": "WFvinesEnabled",
+      "isValue": "true"
+    },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/attributes/minTemp",
     "value": 2,
     "file": "game:blocktypes/plant/wildvine.json",
-    "condition": { "when": "WFvinesEnabled", "isValue": "true" }
+    "condition": {
+      "when": "WFvinesEnabled",
+      "isValue": "true"
+    },
+    "side": "server"
   },
   {
     "op": "replace",
     "path": "/class",
     "value": "BlockEnhancedVines",
     "file": "game:blocktypes/plant/wildvine.json",
-    "condition": { "when": "WFvinesEnabled", "isValue": "true" }
+    "condition": {
+      "when": "WFvinesEnabled",
+      "isValue": "true"
+    },
+    "side": "server"
   }
 ]

@@ -3,13 +3,15 @@
     "op": "add",
     "path": "/attributes/treeGenByType/*-ferntree-*",
     "value": "ferntree-normal-trunk",
-    "file": "game:blocktypes/plant/plaintreesapling.json"
+    "file": "game:blocktypes/plant/plaintreesapling.json",
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/variantgroups/0/states/4",
     "value": "ferntree",
-    "file": "game:blocktypes/plant/plaintreesapling.json"
+    "file": "game:blocktypes/plant/plaintreesapling.json",
+    "side": "server"
   },
   {
     "op": "add",
@@ -32,7 +34,8 @@
       "*-purpleheart": 50,
       "*-walnut": 39
     },
-    "file": "game:blocktypes/plant/plaintreesapling.json"
+    "file": "game:blocktypes/plant/plaintreesapling.json",
+    "side": "server"
   },
   {
     "op": "add",
@@ -56,24 +59,28 @@
       "*-brownbamboo-*": 22,
       "*-ferntree-*": 19
     },
-    "file": "game:blocktypes/plant/plaintreesapling.json"
+    "file": "game:blocktypes/plant/plaintreesapling.json",
+    "side": "server"
   },
   {
     "op": "move",
     "frompath": "/entityclassByType/*",
     "path": "/move-temp",
-    "file": "game:blocktypes/plant/plaintreesapling.json"
+    "file": "game:blocktypes/plant/plaintreesapling.json",
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/entityclassByType/@sapling-(birch|oak|maple|pine|acacia|kapok|larch|crimsonkingmaple|redwood|baldcypress|ebony|purpleheart|walnut)-.*",
     "value": "RegenSapling",
-    "file": "game:blocktypes/plant/plaintreesapling.json"
+    "file": "game:blocktypes/plant/plaintreesapling.json",
+    "side": "server"
   },
   {
     "op": "move",
     "frompath": "/move-temp",
     "path": "/entityclassByType/*",
-    "file": "game:blocktypes/plant/plaintreesapling.json"
+    "file": "game:blocktypes/plant/plaintreesapling.json",
+    "side": "server"
   }
 ]

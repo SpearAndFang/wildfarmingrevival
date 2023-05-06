@@ -9,6 +9,8 @@
         "avg": 0.5
       }
     },
-    "file": "game:blocktypes/plant/ferntree.json"
+    "file": "game:blocktypes/plant/ferntree.json",
+    "side": "server"
+
   }
 ]

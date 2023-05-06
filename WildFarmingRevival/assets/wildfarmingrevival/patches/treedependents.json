@@ -13,13 +13,15 @@
       "*-blacktrumpet-*": "decidious",
       "*-golddropmilkcap-*": "decidious"
     },
-    "file": "game:blocktypes/plant/mushroom.json"
+    "file": "game:blocktypes/plant/mushroom.json",
+    "side": "server"
   },
   {
     "op": "replace",
     "path": "/class",
     "value": "BlockEnhancedMushroom",
-    "file": "game:blocktypes/plant/mushroom.json"
+    "file": "game:blocktypes/plant/mushroom.json",
+    "side": "server"
   },
   {
     "op": "add",
@@ -36,19 +38,25 @@
       "*-pinkbonnet-*": "tropical",
       "*-shiitake-*": "decidious"
     },
-    "file": "game:blocktypes/plant/mushroom-side.json"
+    "file": "game:blocktypes/plant/mushroom-side.json",
+    "side": "server"
   },
   {
     "op": "replace",
     "path": "/class",
     "value": "BlockEnhancedMushroom",
-    "file": "game:blocktypes/plant/mushroom-side.json"
+    "file": "game:blocktypes/plant/mushroom-side.json",
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/entityClass",
     "value": "TermiteMound",
     "file": "game:blocktypes/soil/termitemound.json",
-    "condition": { "when": "WFtermitesEnabled", "isValue": "true" }
+    "condition": {
+      "when": "WFtermitesEnabled",
+      "isValue": "true"
+    },
+    "side": "server"
   }
 ]

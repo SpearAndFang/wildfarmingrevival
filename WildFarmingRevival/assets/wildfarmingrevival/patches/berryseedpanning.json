@@ -1,0 +1,45 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes/panningDrops/muddygravel",
+    "value": [
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-smallberrybush-cranberry-empty",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-smallberrybush-blueberry-empty",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-bigberrybush-redcurrant-empty",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-bigberrybush-whitecurrant-empty",
+        "chance": { "avg": 0.0005 }
+      },
+      {
+        "type": "item",
+        "code": "wildfarmingrevival:wildseeds-bigberrybush-blackcurrant-empty",
+        "chance": { "avg": 0.0005 }
+      }
+    ],
+    "file": "game:blocktypes/wood/pan.json",
+    "condition": {
+      "when": "WFseedPanningEnabled",
+      "isValue": "true"
+    },
+    "dependsOn": [
+      {
+        "modid": "wildcraft",
+        "invert": true
+      }
+    ],
+    "side": "server"
+  }
+]

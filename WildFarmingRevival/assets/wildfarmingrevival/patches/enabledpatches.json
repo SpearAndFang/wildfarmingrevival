@@ -54,7 +54,11 @@
     "path": "/2/enabled",
     "value": false,
     "file": "wildfarmingrevival:recipes/grid/fruitseeds.json",
-    "condition": { "when": "WFcropsEnabled", "isValue": "false" }
+    "condition": {
+      "when": "WFcropsEnabled",
+      "isValue": "false"
+    },
+    "side": "server"
   },
 
   {
@@ -62,28 +66,44 @@
     "path": "/0/enabled",
     "value": false,
     "file": "wildfarmingrevival:recipes/grid/fruitseeds.json",
-    "condition": { "when": "WFbushesEnabled", "isValue": "false" }
+    "condition": {
+      "when": "WFbushesEnabled",
+      "isValue": "false"
+    },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/1/enabled",
     "value": false,
     "file": "wildfarmingrevival:recipes/grid/fruitseeds.json",
-    "condition": { "when": "WFbushesEnabled", "isValue": "false" }
+    "condition": {
+      "when": "WFbushesEnabled",
+      "isValue": "false"
+    },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/enabled",
     "value": false,
     "file": "wildfarmingrevival:itemtypes/wildseeds-smallberrybush.json",
-    "condition": { "when": "WFbushesEnabled", "isValue": "false" }
+    "condition": {
+      "when": "WFbushesEnabled",
+      "isValue": "false"
+    },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/enabled",
     "value": false,
     "file": "wildfarmingrevival:itemtypes/wildseeds-bigberrybush.json",
-    "condition": { "when": "WFbushesEnabled", "isValue": "false" }
+    "condition": {
+      "when": "WFbushesEnabled",
+      "isValue": "false"
+    },
+    "side": "server"
   },
 
   {

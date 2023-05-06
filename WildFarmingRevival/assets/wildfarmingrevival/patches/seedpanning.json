@@ -459,33 +459,6 @@
         "code": "game:treeseed-purpleheart",
         "chance": { "avg": 0.0005 }
       },
-
-      {
-        "type": "item",
-        "code": "wildfarmingrevival:wildseeds-smallberrybush-cranberry-empty",
-        "chance": { "avg": 0.0005 }
-      },
-      {
-        "type": "item",
-        "code": "wildfarmingrevival:wildseeds-smallberrybush-blueberry-empty",
-        "chance": { "avg": 0.0005 }
-      },
-      {
-        "type": "item",
-        "code": "wildfarmingrevival:wildseeds-bigberrybush-redcurrant-empty",
-        "chance": { "avg": 0.0005 }
-      },
-      {
-        "type": "item",
-        "code": "wildfarmingrevival:wildseeds-bigberrybush-whitecurrant-empty",
-        "chance": { "avg": 0.0005 }
-      },
-      {
-        "type": "item",
-        "code": "wildfarmingrevival:wildseeds-bigberrybush-blackcurrant-empty",
-        "chance": { "avg": 0.0005 }
-      },
-
       {
         "type": "item",
         "code": "game:seeds-carrot",
@@ -521,7 +494,11 @@
         "code": "game:seeds-rice",
         "chance": { "avg": 0.0005 }
       },
-      { "type": "item", "code": "game:seeds-rye", "chance": { "avg": 0.0005 } },
+      {
+        "type": "item",
+        "code": "game:seeds-rye",
+        "chance": { "avg": 0.0005 }
+      },
       {
         "type": "item",
         "code": "game:seeds-soybean",
@@ -534,13 +511,21 @@
       }
     ],
     "file": "game:blocktypes/wood/pan.json",
-    "condition": { "when": "WFseedPanningEnabled", "isValue": "true" }
+    "condition": {
+      "when": "WFseedPanningEnabled",
+      "isValue": "true"
+    },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/attributes/pannable",
     "value": true,
     "file": "game:blocktypes/soil/muddygravel.json",
-    "condition": { "when": "WFseedPanningEnabled", "isValue": "true" }
+    "condition": {
+      "when": "WFseedPanningEnabled",
+      "isValue": "true"
+    },
+    "side": "server"
   }
 ]

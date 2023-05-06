@@ -85,15 +85,12 @@
     <Content Include="assets/**">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Remove="assets\wildfarmingrevival\patches\berryseedpanning.json" />
     <None Update="modinfo.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="modicon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="assets/" />
   </ItemGroup>
 </Project>

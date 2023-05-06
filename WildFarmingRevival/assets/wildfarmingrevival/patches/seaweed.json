@@ -8,7 +8,12 @@
       "maxTemp": 50
     },
     "file": "game:blocktypes/plant/seaweed.json",
-    "condition": { "when": "WFseaweedEnabled", "isValue": "true" }
+    "condition": {
+      "when": "WFseaweedEnabled",
+      "isValue": "true"
+    },
+    "side": "server"
+
   },
   {
     "op": "add",
@@ -17,6 +22,10 @@
       "*-top": "BESeaweed"
     },
     "file": "game:blocktypes/plant/seaweed.json",
-    "condition": { "when": "WFseaweedEnabled", "isValue": "true" }
+    "condition": {
+      "when": "WFseaweedEnabled",
+      "isValue": "true"
+    },
+    "side": "server"
   }
 ]
