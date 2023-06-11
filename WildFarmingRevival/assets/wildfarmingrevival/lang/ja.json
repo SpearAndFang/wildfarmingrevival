@@ -1,8 +1,8 @@
 {
-  // Japanese localization file for 'Wild Farming - Revival'.
-  // Mod Version: v1.0.2
-  // Translated By: Macoto Hino
-  // Machine translation using PCOT and DeepL.
+    "comment_description": "Japanese localization file for 'Wild Farming - Revival'.",
+    "comment_version": "Mod Version: v1.0.6",
+    "comment_author": "Translated By: Macoto Hino",
+    "comment_technical_details": "Machine translation using PCOT and DeepL.",	
 
   "game:tabname-wildfarming": "Wild Farming",
   "item-wildseeds-flower-catmint-free": "イヌハッカの種",
@@ -178,6 +178,6 @@
   "block-wildplant-flower-redtopgrass-free": "成長中のコヌカグサ",
   "block-wildplant-flower-cornflower-free": "成長中のヤグルマギク",
 
-  "msubstrate-barren": "Add a mushroom to this block to begin incubating it."
+  "msubstrate-barren": "このブロックにキノコを追加して培養を開始します。"
 
 }

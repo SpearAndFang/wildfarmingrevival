@@ -33,11 +33,6 @@
     "construction": [ "" ],
     "wildfarming": [ "*" ]
   },
-  "attributes": {
-    "handbook": {
-      "groupBy": [ "trunk-*" ]
-    }
-  },
   "shapeByType": {
     "*-redwood": { "base": "game:block/wood/log/section-nw" },
     "*": { "base": "game:block/basic/cube" }
@@ -45,6 +40,9 @@
   "blockmaterial": "Wood",
   "requiredMiningTier": 1,
   "attributes": {
+    "handbook": {
+      "groupBy": [ "trunk-*" ]
+    },
     "treeFriendsByType": {
       "*": [
         {
@@ -296,7 +294,6 @@
           "minRain": 0.75,
           "weight": 15
         },
-
         {
           "blockCode": "mushroom-pinkoyster-normal-north",
           "OnGround": false,
@@ -422,7 +419,6 @@
           "minRain": 0.4,
           "weight": 2
         },
-
         {
           "blockCode": "hanginglichen-lace-bottom",
           "OnGround": false,
@@ -504,12 +500,23 @@
       "*-redwood": "game:logsection-placed-{wood}-nw-ud",
       "*": "game:log-placed-{wood}-ud"
     },
-    "handbook": {
-      "exclude": true,
-      "groupBy": [ "trunk-{wood}" ]
-    },
     "treeFellingGroupCode": "{wood}",
-    "treeFellingGroupSpreadIndex": 3,
+    "treeFellingGroupSpreadIndexByType": {
+      "*-birch-*": 4,
+      "*-oak-*": 4,
+      "*-maple-*": 4,
+      "*-pine-*": 3,
+      "*-acacia-*": 4,
+      "*-kapok-*": 3,
+      "*-baldcypress-*": 3,
+      "*-larch-*": 3,
+      "*-redwood-*": 3,
+      "*-ebony-*": 6,
+      "*-walnut-*": 4,
+      "*-purpleheart-*": 5,
+      "*-aged-*": 3,
+      "*": 4
+    },
     "preventsDecay": true,
     "treeGenByType": {
       "*-birch": "silverbirch",

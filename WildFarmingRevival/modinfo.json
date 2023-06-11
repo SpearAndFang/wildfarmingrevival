@@ -4,7 +4,7 @@
   "name": "Wild Farming Revival",
   "description": "Cultivate flowers, herbs, mushrooms, and bushes!",
   "authors": ["jakecool19", "SpearAndFang"],
-  "version": "1.0.5",
+  "version": "1.0.6",
   "dependencies": {
     "game": ""
   }
