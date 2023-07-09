@@ -1,0 +1,27 @@
+{
+  "recipeingredient-item-herbbundle-basil-insturmentalcase": "basilic",
+  "recipeingredient-item-herbbundle-chamomile-insturmentalcase": "camomille",
+  "recipeingredient-item-herbbundle-cilantro-insturmentalcase": "coriandre",
+  "recipeingredient-item-herbbundle-lavender-insturmentalcase": "lavande",
+  "recipeingredient-item-herbbundle-marjoram-insturmentalcase": "marjolaine",
+  "recipeingredient-item-herbbundle-mint-insturmentalcase": "menthe",
+  "recipeingredient-item-herbbundle-saffron-insturmentalcase": "safran",
+  "recipeingredient-item-herbbundle-sage-insturmentalcase": "sauge",
+  "recipeingredient-item-herbbundle-thyme-insturmentalcase": "thym",
+
+  "meal-ingredient-soup-primary-herbbundle-basil": "Basilic",
+  "meal-ingredient-soup-primary-herbbundle-chamomile": "Camomille",
+  "meal-ingredient-soup-primary-herbbundle-cilantro": "Coriandre",
+  "meal-ingredient-soup-primary-herbbundle-lavender": "Lavande",
+  "meal-ingredient-soup-primary-herbbundle-marjoram": "Marjolaine",
+  "meal-ingredient-soup-primary-herbbundle-mint": "Menthe",
+  "meal-ingredient-soup-primary-herbbundle-saffron": "Safran",
+  "meal-ingredient-soup-primary-herbbundle-sage": "Sauge",
+  "meal-ingredient-soup-primary-herbbundle-thyme": "Thym",
+
+  "block-muddygravel-*": "Gravier boueux",
+
+  "block-sapling-ferntree-*": "Jeune fougère arborescente",
+
+  "block-seaweed-top": "Pointe d'algue"
+}

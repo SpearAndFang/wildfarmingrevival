@@ -358,7 +358,10 @@ namespace WildFarmingRevival.ModSystem
                                     tmpPos.Set(this.Pos);
                                     tmpPos.Add(foilX, -BotanyConfig.Loaded.GrownTreeRepopVertSearch, foilZ);
 
-                                    for (var f = tmpPos.Y; f < BotanyConfig.Loaded.GrownTreeRepopVertSearch; f++)
+                                    var scanMin = tmpPos.Y - BotanyConfig.Loaded.GrownTreeRepopVertSearch;
+                                    var scanMax = tmpPos.Y + BotanyConfig.Loaded.GrownTreeRepopVertSearch;
+
+                                    for (var f = scanMin; f < scanMax; f++)
                                     {
                                         tmpPos.Y += 1;
                                         if (pop.TryToPlant(tmpPos, this.changer, null))

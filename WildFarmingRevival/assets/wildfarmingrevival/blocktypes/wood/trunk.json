@@ -28,10 +28,10 @@
     }
   ],
   "creativeinventory": {
-    "general": [ "" ],
-    "flora": [ "" ],
-    "construction": [ "" ],
-    "wildfarming": [ "*" ]
+    "general": [""],
+    "flora": [""],
+    "construction": [""],
+    "wildfarming": ["*"]
   },
   "shapeByType": {
     "*-redwood": { "base": "game:block/wood/log/section-nw" },
@@ -41,7 +41,7 @@
   "requiredMiningTier": 1,
   "attributes": {
     "handbook": {
-      "groupBy": [ "trunk-*" ]
+      "groupBy": ["trunk-*"]
     },
     "treeFriendsByType": {
       "*": [
