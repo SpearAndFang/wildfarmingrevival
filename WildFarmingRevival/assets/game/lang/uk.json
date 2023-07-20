@@ -1,0 +1,27 @@
+{
+  "recipeingredient-item-herbbundle-basil-insturmentalcase": "базилік",
+  "recipeingredient-item-herbbundle-chamomile-insturmentalcase": "ромашка",
+  "recipeingredient-item-herbbundle-cilantro-insturmentalcase": "коріандр",
+  "recipeingredient-item-herbbundle-lavender-insturmentalcase": "лаванда",
+  "recipeingredient-item-herbbundle-marjoram-insturmentalcase": "майоран",
+  "recipeingredient-item-herbbundle-mint-insturmentalcase": "м'ята",
+  "recipeingredient-item-herbbundle-saffron-insturmentalcase": "шафран",
+  "recipeingredient-item-herbbundle-sage-insturmentalcase": "шавлія",
+  "recipeingredient-item-herbbundle-thyme-insturmentalcase": "чебрець",
+
+  "meal-ingredient-soup-primary-herbbundle-basil": "Базилік",
+  "meal-ingredient-soup-primary-herbbundle-chamomile": "Ромашка",
+  "meal-ingredient-soup-primary-herbbundle-cilantro": "Коріандр",
+  "meal-ingredient-soup-primary-herbbundle-lavender": "Лаванда",
+  "meal-ingredient-soup-primary-herbbundle-marjoram": "Майоран",
+  "meal-ingredient-soup-primary-herbbundle-mint": "М'ята",
+  "meal-ingredient-soup-primary-herbbundle-saffron": "Шафран",
+  "meal-ingredient-soup-primary-herbbundle-sage": "Шавлія",
+  "meal-ingredient-soup-primary-herbbundle-thyme": "Чебрець",
+
+  "block-muddygravel-*": "Мулистий гравій",
+
+  "block-sapling-ferntree-*": "Саджанець папороті",
+
+  "block-seaweed-top": "Обрізки морської капусти"
+}
