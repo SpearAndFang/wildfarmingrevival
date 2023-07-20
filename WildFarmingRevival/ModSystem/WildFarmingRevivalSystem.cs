@@ -49,6 +49,7 @@ namespace WildFarmingRevival.ModSystem
         public override void Start(ICoreAPI api)
         {
             base.Start(api);
+			api.World.Logger.Event("started 'Wild Farming Revival' mod");
             api.RegisterItemClass("wildseed", typeof(WildSeed));
             api.RegisterItemClass("ItemMushroomSpawn", typeof(ItemMushroomSpawn));
 

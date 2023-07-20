@@ -425,7 +425,9 @@ namespace WildFarmingRevival.ModSystem
 
                         if (found == null)
                         {
-                            for (var f = tmpPos.Y; f < BotanyConfig.Loaded.GrownTreeRepopVertSearch; f++)
+                            var scanMin = tmpPos.Y - BotanyConfig.Loaded.GrownTreeRepopVertSearch;
+                            var scanMax = tmpPos.Y + BotanyConfig.Loaded.GrownTreeRepopVertSearch;
+                            for (var f = scanMin; f < scanMax; f++)
                             {
                                 tmpPos.Y += 1;
                                 var foilSearch = this.Api.World.BlockAccessor.GetBlock(tmpPos);
