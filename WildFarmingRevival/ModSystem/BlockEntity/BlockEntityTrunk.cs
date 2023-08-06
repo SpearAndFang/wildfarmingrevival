@@ -2,6 +2,7 @@ namespace WildFarmingRevival.ModSystem
 {
     using System;
     using System.Collections.Generic;
+    using System.Diagnostics;
     using System.Text;
     using Vintagestory.API.Common;
     using Vintagestory.API.Common.Entities;
@@ -35,6 +36,8 @@ namespace WildFarmingRevival.ModSystem
         //Leaves for health calculation
         private int brokenLeaves;
         private int diseasedParts;
+
+        private readonly string[] nearWaterBlocks = new string[] { "water-still-7", "muddygravel", "seaweed-section", "seaweed-top", "lakeice" };
 
         private int CurrentHealthyParts
         {
@@ -140,6 +143,68 @@ namespace WildFarmingRevival.ModSystem
         }
 
 
+        public bool NearToClaimedLand(BlockPos tmpPos)
+        {
+            if (BotanyConfig.Loaded.PropogateIntoClaims)
+            { return false; }
+
+            var rad = 8;
+            var exploArea = new Cuboidi(tmpPos.AddCopy(-rad, -rad, -rad), tmpPos.AddCopy(rad, rad, rad));
+            var claims = (this.Api as ICoreServerAPI).WorldManager.SaveGame.LandClaims;
+            for (var i = 0; i < claims.Count; i++)
+            {
+                if (claims[i].Intersects(exploArea))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool NearWater(BlockPos tmpPos)
+        {
+            if (BotanyConfig.Loaded.PropogateIntoWater)
+            { return false; }
+
+
+
+            // prevent placing anything in water
+            var liquidSearch = this.Api.World.BlockAccessor.GetBlock(tmpPos, BlockLayersAccess.Default);
+
+            var path = liquidSearch.Code.Path;
+            foreach(var testStr in this.nearWaterBlocks)
+            {
+                if (string.CompareOrdinal(path, testStr) == 0)
+                {
+                //    Debug.WriteLine("Abort:" + path);
+                    return true;
+                }
+            }
+
+            //Debug.WriteLine(path);
+            //if (path.Contains("muddygravel") || path.Contains("water") || path.Contains("ice") || path.Contains("seaweed") || path.Contains("snow"))
+            //{ return true; }
+
+            var upPos = tmpPos.UpCopy();
+            //let's check for water one block up too, for cases where there's no muddy gravel
+            liquidSearch = this.Api.World.BlockAccessor.GetBlock(upPos, BlockLayersAccess.Default);
+
+            path = liquidSearch.Code.Path;
+            foreach (var testStr in this.nearWaterBlocks)
+            {
+                if (string.CompareOrdinal(path, testStr) == 0)
+                {
+              //      Debug.WriteLine("Abort:" + path);
+                    return true;
+                }
+            }
+            //if (path.Contains("water") || path.Contains("ice") || path.Contains("seaweed"))
+            //{ return true; }
+
+            return false;
+        }
+
+
         public void Regenerate(float dt)
         {
             if (!BotanyConfig.Loaded.LivingTreesEnabled)
@@ -229,7 +294,7 @@ namespace WildFarmingRevival.ModSystem
             {
                 if (dailyConds[d].Temperature < this.minTemp || dailyConds[d].Temperature > this.maxTemp)
                 {
-                    //Do not do anything if too or too hot
+                    //Do not do anything if too cold or too hot
                     if (dailyConds[d].Temperature < this.minTemp - BotanyConfig.Loaded.TreeRevertGrowthTempThreshold || dailyConds[d].Temperature > this.maxTemp + BotanyConfig.Loaded.TreeRevertGrowthTempThreshold)
                     {
                         this.regenPerc = 0f;
@@ -358,18 +423,27 @@ namespace WildFarmingRevival.ModSystem
                                     tmpPos.Set(this.Pos);
                                     tmpPos.Add(foilX, -BotanyConfig.Loaded.GrownTreeRepopVertSearch, foilZ);
 
-                                    var scanMin = tmpPos.Y - BotanyConfig.Loaded.GrownTreeRepopVertSearch;
-                                    var scanMax = tmpPos.Y + BotanyConfig.Loaded.GrownTreeRepopVertSearch;
-
-                                    for (var f = scanMin; f < scanMax; f++)
+                                    if (!this.NearToClaimedLand(tmpPos))
                                     {
-                                        tmpPos.Y += 1;
-                                        if (pop.TryToPlant(tmpPos, this.changer, null))
+                                        var scanMin = tmpPos.Y - BotanyConfig.Loaded.GrownTreeRepopVertSearch;
+                                        var scanMax = tmpPos.Y + BotanyConfig.Loaded.GrownTreeRepopVertSearch;
+
+                                        for (var f = scanMin; f < scanMax; f++)
                                         {
-                                            var floor = this.changer.GetBlock(new AssetLocation("game:forestfloor-" + this.Api.World.Rand.Next(8)));
-                                            this.changer.SetBlock(floor.BlockId, tmpPos);
-                                            foilPlanted = true;
-                                            break;
+                                            tmpPos.Y += 1;
+                                            if (!this.NearWater(tmpPos))
+                                            {
+                                                if (pop.TryToPlant(this.Api, tmpPos, this.changer, null))
+                                                {
+
+
+
+                                                    var floor = this.changer.GetBlock(new AssetLocation("game:forestfloor-" + this.Api.World.Rand.Next(8)));
+                                                    this.changer.SetBlock(floor.BlockId, tmpPos);
+                                                    foilPlanted = true;
+                                                    break;
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -379,13 +453,13 @@ namespace WildFarmingRevival.ModSystem
                                     tmpPos.Set(randomLog.X, randomLog.Y, randomLog.Z);
 
                                     if (pop.onUnderneath)
-                                    { pop.TryToPlant(tmpPos, this.changer, null); }
+                                    { pop.TryToPlant(this.Api, tmpPos, this.changer, null); }
                                     else
                                     {
                                         this.rndFaces.Shuffle(this.Api.World.Rand);
                                         foreach (var side in this.rndFaces)
                                         {
-                                            if (pop.TryToPlant(tmpPos, this.changer, side))
+                                            if (pop.TryToPlant(this.Api, tmpPos, this.changer, side))
                                             {
                                                 foilPlanted = true;
                                                 break;
@@ -425,30 +499,37 @@ namespace WildFarmingRevival.ModSystem
 
                         if (found == null)
                         {
-                            var scanMin = tmpPos.Y - BotanyConfig.Loaded.GrownTreeRepopVertSearch;
-                            var scanMax = tmpPos.Y + BotanyConfig.Loaded.GrownTreeRepopVertSearch;
-                            for (var f = scanMin; f < scanMax; f++)
+                            // prevent placing anything in trader claims
+                            if (!this.NearToClaimedLand(tmpPos))
                             {
-                                tmpPos.Y += 1;
-                                var foilSearch = this.Api.World.BlockAccessor.GetBlock(tmpPos);
-                                if (foilSearch == null)
-                                { continue; }
 
-                                if (groundCheck)
+                                var scanMin = tmpPos.Y - BotanyConfig.Loaded.GrownTreeRepopVertSearch;
+                                var scanMax = tmpPos.Y + BotanyConfig.Loaded.GrownTreeRepopVertSearch;
+                                for (var f = scanMin; f < scanMax; f++)
                                 {
-                                    if (foilSearch.IsReplacableBy(plant))
+                                    if (!this.NearWater(tmpPos))
                                     {
+                                        tmpPos.Y += 1;
+                                        var foilSearch = this.Api.World.BlockAccessor.GetBlock(tmpPos);
+                                        if (foilSearch == null)
+                                        { continue; }
 
-                                        this.Api.World.BlockAccessor.SetBlock(plant.BlockId, tmpPos);
-                                        sapped = true;
-                                        break;
+                                        if (groundCheck)
+                                        {
+                                            if (foilSearch.IsReplacableBy(plant))
+                                            {
+                                                this.Api.World.BlockAccessor.SetBlock(plant.BlockId, tmpPos);
+                                                sapped = true;
+                                                break;
+                                            }
+                                            else
+                                            { groundCheck = foilSearch.Fertility > 0 && foilSearch.SideSolid[BlockFacing.UP.Index]; }
+                                        }
+                                        else
+                                        {
+                                            groundCheck = foilSearch.Fertility > 0 && foilSearch.SideSolid[BlockFacing.UP.Index];
+                                        }
                                     }
-                                    else
-                                    { groundCheck = foilSearch.Fertility > 0 && foilSearch.SideSolid[BlockFacing.UP.Index]; }
-                                }
-                                else
-                                {
-                                    groundCheck = foilSearch.Fertility > 0 && foilSearch.SideSolid[BlockFacing.UP.Index];
                                 }
                             }
                         }

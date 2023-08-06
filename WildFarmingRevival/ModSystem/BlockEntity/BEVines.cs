@@ -64,8 +64,14 @@ namespace WildFarmingRevival.ModSystem
             if (self == null)
             { return; }
 
+            if (self.BlockId == 0)
+            { return; }
+
             var plantCode = self.CodeWithPart("section", 1);
-            var plant = this.Api.World.GetBlock(plantCode);
+
+            Block plant = null;
+            if (plantCode != null)
+            { plant = this.Api.World.GetBlock(plantCode); }
 
             if (plant == null)
             { return; }

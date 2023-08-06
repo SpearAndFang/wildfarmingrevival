@@ -1,5 +1,6 @@
 namespace WildFarmingRevival.ModSystem
 {
+    using System.Diagnostics;
     using Newtonsoft.Json;
     using Vintagestory.API.Common;
     using Vintagestory.API.MathTools;
@@ -61,7 +62,7 @@ namespace WildFarmingRevival.ModSystem
         }
 
 
-        public bool TryToPlant(BlockPos pos, IBlockAccessor changer, BlockFacing side)
+        public bool TryToPlant(ICoreAPI api, BlockPos pos, IBlockAccessor changer, BlockFacing side)
         {
             if (this.resolvedBlock == null)
             { return false; }
@@ -74,7 +75,22 @@ namespace WildFarmingRevival.ModSystem
 
                 if (ground.Fertility > 0 && ground.SideSolid[BlockFacing.UP.Index] && changer.GetBlock(tmpPos).IsReplacableBy(this.resolvedBlock))
                 {
-                    changer.SetBlock(this.resolvedBlock.BlockId, tmpPos);
+                    // limit ferns here
+                    // ferns?
+                    if (this.resolvedBlock.Code.FirstCodePart() == "fern")
+                    {
+                        var rnd = api.World.Rand.Next(101);
+                        if (rnd >= BotanyConfig.Loaded.FernRepopRate)
+                        {
+                            //Debug.WriteLine("------------- skip fern");
+                        }
+                        else
+                        {
+                            //Debug.WriteLine("plant fern -----------------");
+                            changer.SetBlock(this.resolvedBlock.BlockId, tmpPos);
+                        }
+                    }
+                    //Debug.WriteLine("onGround: " + this.resolvedBlock.Code.Path);
                     return true;
                 }
             }

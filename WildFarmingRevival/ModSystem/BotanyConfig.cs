@@ -7,6 +7,15 @@ namespace WildFarmingRevival.ModSystem
         //Tree settings
         public int MaxTreeGrowthStages { get; set; } = 4;
 
+        // Spang added
+        public int FernRepopRate { get; set; } = 20;
+
+        public bool PropogateIntoWater { get; set; } = false;
+
+        public bool PropogateIntoClaims { get; set; } = false;
+
+        // End Spang added
+
         public int GrownTreeRepopMinimum { get; set; } = 8;
 
         public int GrownTreeRepopVertSearch { get; set; } = 5;

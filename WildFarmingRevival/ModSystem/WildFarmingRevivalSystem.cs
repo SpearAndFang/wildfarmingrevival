@@ -49,7 +49,7 @@ namespace WildFarmingRevival.ModSystem
         public override void Start(ICoreAPI api)
         {
             base.Start(api);
-			api.World.Logger.Event("started 'Wild Farming Revival' mod");
+            api.World.Logger.Event("started 'Wild Farming Revival' mod");
             api.RegisterItemClass("wildseed", typeof(WildSeed));
             api.RegisterItemClass("ItemMushroomSpawn", typeof(ItemMushroomSpawn));
 
@@ -73,7 +73,7 @@ namespace WildFarmingRevival.ModSystem
             //this.harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
 
-        
+
         public override void StartClientSide(ICoreClientAPI api)
         {
             base.StartClientSide(api);
