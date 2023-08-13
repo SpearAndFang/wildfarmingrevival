@@ -8,7 +8,7 @@
       },
       "F": {
         "type": "item",
-        "code": "game:cattailroot"
+        "code": "game:cattailtops"
       }
     },
     "width": 1,
@@ -32,7 +32,7 @@
       },
       "F": {
         "type": "item",
-        "code": "game:papyrusroot"
+        "code": "game:papyrustops"
       }
     },
     "width": 1,
