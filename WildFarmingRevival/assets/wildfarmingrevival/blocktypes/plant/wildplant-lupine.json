@@ -4,11 +4,6 @@
   "creativeinventory": {
     "wildfarming": [ "*-free" ]
   },
-  "attributes": {
-    "handbook": {
-      "groupBy": [ "wildplant-*" ]
-    }
-  },
   "variantgroups": [
     {
       "code": "type",
@@ -28,7 +23,7 @@
   "behaviors": [ { "name": "Unstable" } ],
   "attributes": {
     "handbook": {
-      "exclude": true
+      "groupBy": [ "wildplant-*" ]
     },
     "maxTemp": 29,
     "minTemp": -9,

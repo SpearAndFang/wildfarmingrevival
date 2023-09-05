@@ -26,7 +26,6 @@
       "*-greenbamboo": 120,
       "*-brownbamboo": 120,
       "*-larch": 15,
-      "*-crimsonkingmaple": 26,
       "*-redwood": 35,
       "*-baldcypress": 41,
       "*-greenspirecypress": 39,
@@ -48,7 +47,6 @@
       "*-acacia-*": 21,
       "*-kapok-*": 20,
       "*-larch-*": -24,
-      "*-crimsonkingmaple-*": 1,
       "*-redwood-*": 7,
       "*-baldcypress-*": 8,
       "*-greenspirecypress-*": 1,
@@ -71,7 +69,7 @@
   },
   {
     "op": "add",
-    "path": "/entityclassByType/@sapling-(birch|oak|maple|pine|acacia|kapok|larch|crimsonkingmaple|redwood|baldcypress|ebony|purpleheart|walnut)-.*",
+    "path": "/entityclassByType/@sapling-(birch|oak|maple|pine|acacia|kapok|larch|redwood|baldcypress|ebony|purpleheart|walnut)-.*",
     "value": "RegenSapling",
     "file": "game:blocktypes/plant/plaintreesapling.json",
     "side": "server"

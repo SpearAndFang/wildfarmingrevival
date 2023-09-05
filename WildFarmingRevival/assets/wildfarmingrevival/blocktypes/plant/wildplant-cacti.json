@@ -4,11 +4,6 @@
   "creativeinventory": {
     "wildfarming": [ "*" ]
   },
-  "attributes": {
-    "handbook": {
-      "groupBy": [ "wildplant-*" ]
-    }
-  },
   "variantgroups": [
     {
       "code": "type",
@@ -20,7 +15,7 @@
   "behaviors": [ { "name": "Unstable" } ],
   "attributes": {
     "handbook": {
-      "exclude": true
+      "groupBy": [ "wildplant-*" ]
     },
     "hoursByType": {
       "*-saguarocactus-topempty": 480,

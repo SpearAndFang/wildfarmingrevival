@@ -4,11 +4,6 @@
   "creativeinventory": {
     "wildfarming": [ "*" ]
   },
-  "attributes": {
-    "handbook": {
-      "groupBy": [ "wildplant-*" ]
-    }
-  },
   "variantgroups": [
     {
       "code": "type",
@@ -30,7 +25,7 @@
     "hours": 768,
     "minTemp": -1,
     "handbook": {
-      "exclude": true
+      "groupBy": [ "wildplant-*" ]
     }
   },
   "drops": [

@@ -2,7 +2,6 @@ namespace WildFarmingRevival.ModSystem
 {
     using System;
     using System.Collections.Generic;
-    using System.Diagnostics;
     using System.Text;
     using Vintagestory.API.Common;
     using Vintagestory.API.Common.Entities;

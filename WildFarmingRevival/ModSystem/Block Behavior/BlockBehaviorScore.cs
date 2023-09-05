@@ -22,7 +22,7 @@ namespace WildFarmingRevival.ModSystem
         public override void Initialize(JsonObject properties)
         {
             base.Initialize(properties);
-            if (!this.block.Code.Path.Contains("log-grown-pine-"))
+            if (!this.block.Code.Path.Contains("log-grown-pine-") && !this.block.Code.Path.Contains("log-grown-acacia-"))
             { return; }
 
             this.scoreTime = properties["scoreTime"].AsFloat(0);
@@ -37,9 +37,10 @@ namespace WildFarmingRevival.ModSystem
         public override void OnLoaded(ICoreAPI api)
         {
             base.OnLoaded(api);
-            if (!this.block.Code.Path.Contains("log-grown-pine-"))
+            if (!this.block.Code.Path.Contains("log-grown-pine-") && !this.block.Code.Path.Contains("log-grown-acacia-"))
             { return; }
-            this.scoredBlockCode = new AssetLocation("log-resinharvested-pine-ud");
+            var type = this.block.FirstCodePart(2);
+            this.scoredBlockCode = new AssetLocation("log-resinharvested-" + type + "-ud");
             this.scoredBlock = api.World.GetBlock(this.scoredBlockCode);
             if (this.scoredBlock == null)
             {
@@ -73,7 +74,7 @@ namespace WildFarmingRevival.ModSystem
             if (!world.Claims.TryAccess(byPlayer, blockSel.Position, EnumBlockAccessFlags.Use))
             { return false; }
 
-            if (!this.block.Code.Path.Contains("log-grown-pine-") || byPlayer.InventoryManager.ActiveHotbarSlot.Itemstack?.Collectible?.Tool != EnumTool.Knife)
+            if ((!this.block.Code.Path.Contains("log-grown-pine-") && !this.block.Code.Path.Contains("log-grown-acacia-")) || byPlayer.InventoryManager.ActiveHotbarSlot.Itemstack?.Collectible?.Tool != EnumTool.Knife)
             { return false; }
 
             handling = EnumHandling.PreventDefault;
@@ -120,7 +121,7 @@ namespace WildFarmingRevival.ModSystem
 
         public override WorldInteraction[] GetPlacedBlockInteractionHelp(IWorldAccessor world, BlockSelection selection, IPlayer forPlayer, ref EnumHandling handled)
         {
-            if (!this.block.Code.Path.Contains("log-grown-pine-"))
+            if (!this.block.Code.Path.Contains("log-grown-pine-") && !this.block.Code.Path.Contains("log-grown-acacia-"))
             { return null; }
             return this.interactions;
         }
