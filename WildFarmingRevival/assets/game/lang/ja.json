@@ -1,8 +1,8 @@
 {
-	// Japanese localization file for 'Wild Farming - Revival'.
-	// Mod Version: v1.0.2
-	// Translated By: Macoto Hino
-	// Machine translation using PCOT and DeepL.
+  // Japanese localization file for 'Wild Farming - Revival'.
+  // Mod Version: v1.0.2
+  // Translated By: Macoto Hino
+  // Machine translation using PCOT and DeepL.
 
   "recipeingredient-item-herbbundle-basil-insturmentalcase": "バジル",
   "recipeingredient-item-herbbundle-chamomile-insturmentalcase": "カモミール",
@@ -24,11 +24,14 @@
   "meal-ingredient-soup-primary-herbbundle-sage": "セイジ",
   "meal-ingredient-soup-primary-herbbundle-thyme": "タイム",
 
-  "block-muddygravel-*" : "泥の砂利",
+  "block-muddygravel-*": "泥の砂利",
 
-  "block-sapling-ferntree-*" : "シダの木の苗木",
+  "block-sapling-ferntree-*": "シダの木の苗木",
 
-  "block-seaweed-top": "海藻の切り落とし"
+  "block-seaweed-top": "海藻の切り落とし",
+
+  "item-axe-felling-wfradmin": "Admin axe",
+  "itemdesc-axe-felling-wfradmin": "大いなる力は、大いなる責任を伴う。"
 
 
 

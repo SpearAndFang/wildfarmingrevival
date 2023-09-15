@@ -2,6 +2,7 @@ namespace WildFarmingRevival.ModSystem
 {
     using System;
     using System.Collections.Generic;
+    using System.Diagnostics;
     using System.Text;
     using Vintagestory.API.Common;
     using Vintagestory.API.Common.Entities;
@@ -382,6 +383,57 @@ namespace WildFarmingRevival.ModSystem
                 };
                 sapi.World.TreeGenerators[code].GrowTree(this.changer, this.Pos.AddCopy(0, this.Block.Variant["wood"] == "redwood" ? 1 : 0, 0), pa);
                 this.SetupTree(this.changer.Commit());
+
+                //find and fill gaps - fuck my life
+                //traverse upwards until we reach air or 100 blocks
+                var count = 0;
+                var done = false;
+                do
+                {
+                    count++;
+                    var upPos = this.Pos.AddCopy(0, count, 0);
+                    var upblock = this.Api.World.BlockAccessor.GetBlock(upPos);
+                    if (upblock.BlockId == 0)
+                    { done = true; }
+                    else if (upblock.FirstCodePart() == "leaves" || upblock.FirstCodePart() == "leavesbranchy" || upblock.FirstCodePart() == "air")
+                    {
+                        //if the area directly above contains a growing log, mind the gap
+                        BlockPos[] upUpBlockPositions = {
+                            upPos.UpCopy(),
+                            upPos.UpCopy().NorthCopy(),
+                            upPos.UpCopy().SouthCopy(),
+                            upPos.UpCopy().EastCopy(),
+                            upPos.UpCopy().WestCopy(),
+                            upPos.UpCopy().NorthCopy().WestCopy(),
+                            upPos.UpCopy().NorthCopy().EastCopy(),
+                            upPos.UpCopy().SouthCopy().WestCopy(),
+                            upPos.UpCopy().SouthCopy().EastCopy(),
+                        };
+                        var found = false;
+                        var count2 = 0;
+                        Block upUpblock;
+                        do
+                        {
+                            upUpblock = this.Api.World.BlockAccessor.GetBlock(upUpBlockPositions[count2]);
+                            if (upUpblock.Code.Path.Contains("log-grown"))
+                            { found = true; }
+                            else
+                            { count2++; }
+                        }
+                        while (count2 < upUpBlockPositions.Length && !found);
+
+                        if (found)
+                        {
+                            //fill the gap
+                            this.Api.World.BlockAccessor.SetBlock(upUpblock.BlockId, upPos);
+                            //Debug.WriteLine("Replaced " + upblock.Code.Path + " with a " + upUpblock.Code.Path);
+                        }
+
+                    }
+                }
+                while (count < 50 && !done);
+                //end find and fill gaps
+
             }
             else if (regenedLeaves.Count > 0)
             {

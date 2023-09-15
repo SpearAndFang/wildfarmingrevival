@@ -29,11 +29,17 @@ namespace WildFarmingRevival.ModSystem
 
         public override void OnBlockPlaced(ItemStack byItemStack)
         {
+            var growthMultiplier = 1.0;
+            if (BotanyConfig.Loaded.SeedlingGrowthRateMultiplier > 0.0)
+            {
+                growthMultiplier = 1.0 / BotanyConfig.Loaded.SeedlingGrowthRateMultiplier;
+            }
+
             //Sets up the properties
             var block = this.Api.World.BlockAccessor.GetBlock(this.Pos);
             this.plantedAt = this.Api.World.Calendar.TotalHours;
             if (this.Api.Side == EnumAppSide.Server)
-            { this.blossomAt = this.Api.World.Calendar.TotalHours + ((block.Attributes["hours"].AsDouble(this.growthTime) * 0.75) + (((block.Attributes["hours"].AsDouble(this.growthTime) * 1.25) - (block.Attributes["hours"].AsDouble(this.growthTime) * 0.75)) * this.Api.World.Rand.NextDouble())); }
+            { this.blossomAt = this.Api.World.Calendar.TotalHours + ((block.Attributes["hours"].AsDouble(this.growthTime) * 0.75) + (((block.Attributes["hours"].AsDouble(this.growthTime) * 1.25 * growthMultiplier) - (block.Attributes["hours"].AsDouble(this.growthTime) * 0.75)) * this.Api.World.Rand.NextDouble())); }
             this.minTemp = block.Attributes["minTemp"].AsFloat(-5f);
             this.maxTemp = block.Attributes["maxTemp"].AsFloat(50f);
         }

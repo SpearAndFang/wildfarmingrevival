@@ -23,5 +23,8 @@
 
   "block-sapling-ferntree-*": "Fern Tree Sapling",
 
-  "block-seaweed-top": "Seaweed Trimmings"
+  "block-seaweed-top": "Seaweed Trimmings",
+
+  "item-axe-felling-wfradmin": "Admin axe",
+  "itemdesc-axe-felling-wfradmin": "With great power comes great responsibility."
 }

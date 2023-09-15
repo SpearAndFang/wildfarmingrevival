@@ -1,0 +1,44 @@
+[
+  {
+    "op": "add",
+    "path": "/attackpowerbytype/axe-felling-wfradmin",
+    "value": 40,
+    "file": "game:itemtypes/tool/axe-metal.json"
+  },
+  {
+    "op": "add",
+    "path": "/durabilitybytype/axe-felling-wfradmin",
+    "value": 36000,
+    "file": "game:itemtypes/tool/axe-metal.json"
+  },
+  {
+    "op": "add",
+    "path": "/miningspeedbytype/axe-felling-wfradmin",
+    "value": {
+      "wood": 110,
+      "plant": 60,
+      "leaves": 40
+    },
+    "file": "game:itemtypes/tool/axe-metal.json"
+  },
+  {
+    "op": "add",
+    "path": "/shapeByType/axe-felling-wfradmin",
+    "value": {
+      "base": "item/tool/axe/iron"
+    },
+    "file": "game:itemtypes/tool/axe-metal.json"
+  },
+  {
+    "op": "add",
+    "path": "/tooltierbytype/*-wfradmin",
+    "value": 5,
+    "file": "game:itemtypes/tool/axe-metal.json"
+  },
+  {
+    "op": "add",
+    "path": "/variantgroups/1/states/11",
+    "value": "wfradmin",
+    "file": "game:itemtypes/tool/axe-metal.json"
+  }
+]

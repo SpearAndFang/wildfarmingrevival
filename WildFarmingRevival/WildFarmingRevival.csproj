@@ -93,4 +93,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\game\textures\block\metal\ingot\" />
+  </ItemGroup>
 </Project>

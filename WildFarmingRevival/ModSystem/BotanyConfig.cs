@@ -14,6 +14,8 @@ namespace WildFarmingRevival.ModSystem
 
         public bool PropogateIntoClaims { get; set; } = false;
 
+        public double SeedlingGrowthRateMultiplier { get; set; } = 1.0;
+
         // End Spang added
 
         public int GrownTreeRepopMinimum { get; set; } = 8;

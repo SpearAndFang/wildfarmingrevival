@@ -23,5 +23,8 @@
 
   "block-sapling-ferntree-*": "Саджанець папороті",
 
-  "block-seaweed-top": "Обрізки морської капусти"
+  "block-seaweed-top": "Обрізки морської капусти",
+
+  "item-axe-felling-wfradmin": "Admin axe",
+  "itemdesc-axe-felling-wfradmin": "З великою силою приходить велика відповідальність."
 }

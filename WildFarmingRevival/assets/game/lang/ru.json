@@ -1,27 +1,30 @@
 {
-    "recipeingredient-item-herbbundle-basil-insturmentalcase": "базилик",
-    "recipeingredient-item-herbbundle-chamomile-insturmentalcase": "ромашка",
-    "recipeingredient-item-herbbundle-cilantro-insturmentalcase": "кинза",
-    "recipeingredient-item-herbbundle-lavender-insturmentalcase": "лаванда",
-    "recipeingredient-item-herbbundle-marjoram-insturmentalcase": "майоран",
-    "recipeingredient-item-herbbundle-mint-insturmentalcase": "мята",
-    "recipeingredient-item-herbbundle-saffron-insturmentalcase": "шафран",
-    "recipeingredient-item-herbbundle-sage-insturmentalcase": "шалфей",
-    "recipeingredient-item-herbbundle-thyme-insturmentalcase": "тимьян",
-  
-    "meal-ingredient-soup-primary-herbbundle-basil": "Базилик",
-    "meal-ingredient-soup-primary-herbbundle-chamomile": "Ромашка",
-    "meal-ingredient-soup-primary-herbbundle-cilantro": "Кинза",
-    "meal-ingredient-soup-primary-herbbundle-lavender": "Лаванда",
-    "meal-ingredient-soup-primary-herbbundle-marjoram": "Майоран",
-    "meal-ingredient-soup-primary-herbbundle-mint": "Мята",
-    "meal-ingredient-soup-primary-herbbundle-saffron": "Шафран",
-    "meal-ingredient-soup-primary-herbbundle-sage": "Шалфей",
-    "meal-ingredient-soup-primary-herbbundle-thyme": "Тимьян",
-  
-    "block-muddygravel-*": "Грязный гравий",
-  
-    "block-sapling-ferntree-*": "Саженец папоротникового дерева",
-  
-    "block-seaweed-top": "Обрезки морских водорослей"
-  }
+  "recipeingredient-item-herbbundle-basil-insturmentalcase": "базилик",
+  "recipeingredient-item-herbbundle-chamomile-insturmentalcase": "ромашка",
+  "recipeingredient-item-herbbundle-cilantro-insturmentalcase": "кинза",
+  "recipeingredient-item-herbbundle-lavender-insturmentalcase": "лаванда",
+  "recipeingredient-item-herbbundle-marjoram-insturmentalcase": "майоран",
+  "recipeingredient-item-herbbundle-mint-insturmentalcase": "мята",
+  "recipeingredient-item-herbbundle-saffron-insturmentalcase": "шафран",
+  "recipeingredient-item-herbbundle-sage-insturmentalcase": "шалфей",
+  "recipeingredient-item-herbbundle-thyme-insturmentalcase": "тимьян",
+
+  "meal-ingredient-soup-primary-herbbundle-basil": "Базилик",
+  "meal-ingredient-soup-primary-herbbundle-chamomile": "Ромашка",
+  "meal-ingredient-soup-primary-herbbundle-cilantro": "Кинза",
+  "meal-ingredient-soup-primary-herbbundle-lavender": "Лаванда",
+  "meal-ingredient-soup-primary-herbbundle-marjoram": "Майоран",
+  "meal-ingredient-soup-primary-herbbundle-mint": "Мята",
+  "meal-ingredient-soup-primary-herbbundle-saffron": "Шафран",
+  "meal-ingredient-soup-primary-herbbundle-sage": "Шалфей",
+  "meal-ingredient-soup-primary-herbbundle-thyme": "Тимьян",
+
+  "block-muddygravel-*": "Грязный гравий",
+
+  "block-sapling-ferntree-*": "Саженец папоротникового дерева",
+
+  "block-seaweed-top": "Обрезки морских водорослей",
+
+  "item-axe-felling-wfradmin": "Admin axe",
+  "itemdesc-axe-felling-wfradmin": "С большой властью приходит большая ответственность."
+}

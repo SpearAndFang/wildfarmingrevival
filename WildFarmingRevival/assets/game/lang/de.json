@@ -23,5 +23,8 @@
 
   "block-sapling-ferntree-*": "Farnbaum-Sprössling",
 
-  "block-seaweed-top": "Seegras abschnitt"
+  "block-seaweed-top": "Seegras abschnitt",
+
+  "item-axe-felling-wfradmin": "Admin axe",
+  "itemdesc-axe-felling-wfradmin": "Aus großer Macht folgt große Verantwortung."
 }

@@ -23,5 +23,8 @@
 
   "block-sapling-ferntree-*": "Jeune fougère arborescente",
 
-  "block-seaweed-top": "Pointe d'algue"
+  "block-seaweed-top": "Pointe d'algue",
+
+  "item-axe-felling-wfradmin": "Admin axe",
+  "itemdesc-axe-felling-wfradmin": "Un grand pouvoir implique de grandes responsabilités."
 }
