@@ -85,7 +85,6 @@
     <Content Include="assets/**">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Remove="assets\wildfarmingrevival\blocktypes\wood\wflog-withresin.json" />
     <None Remove="assets\wildfarmingrevival\patches\berryseedpanning.json" />
     <None Update="modinfo.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -95,6 +94,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="assets\game\blocktypes\wood\" />
     <Folder Include="assets\game\textures\block\metal\ingot\" />
   </ItemGroup>
 </Project>

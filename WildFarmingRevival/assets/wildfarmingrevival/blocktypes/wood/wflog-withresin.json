@@ -2,7 +2,7 @@
   "code": "wflog",
   "__comment": "BlockLog contains only contains code for OnPickBlock",
   "entityClassByType": {
-    "log-resinharvested-*": "Transient"
+    "wflog-resinharvested-*": "Transient"
   },
   "behaviorsByType": {
     "wflog-resinharvested-*": [
@@ -25,16 +25,16 @@
             "code": "resin",
             "quantity": { "avg": 1 }
           },
-          "harvestedBlockCode": "wflog-resinharvested-{wood}-ud"
+          "harvestedBlockCode": "wflog-resinharvested-{wood}-{rotation}"
         }
       }
     ]
   },
   "attributesByType": {
-    "log-resinharvested-*": {
+    "wflog-resinharvested-*": {
       "transientProps": {
-        "convertFrom": "wflog-resinharvested-{wood}-ud",
-        "convertTo": "wflog-resin-{wood}-ud",
+        "convertFrom": "wflog-resinharvested-{wood}-{rotation}",
+        "convertTo": "wflog-resin-{wood}-{rotation}",
         "inGameHours": "168"
       },
       "preventsDecay": true,
