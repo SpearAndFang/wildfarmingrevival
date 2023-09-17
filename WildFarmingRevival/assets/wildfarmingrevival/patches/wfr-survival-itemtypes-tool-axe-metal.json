@@ -1,6 +1,13 @@
 [
   {
     "op": "add",
+    "side":  "server",
+    "path": "/creativeinventory/wildfarming",
+    "value": [ "*-wfradmin" ],
+    "file": "game:itemtypes/tool/axe-metal.json"
+  },
+  {
+    "op": "add",
     "path": "/attackpowerbytype/axe-felling-wfradmin",
     "value": 40,
     "file": "game:itemtypes/tool/axe-metal.json"

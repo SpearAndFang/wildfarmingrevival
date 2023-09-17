@@ -140,5 +140,10 @@
   "item-wildseeds-flower-redtopgrass-free": "Redtop grass Seeds",
   "block-wildplant-flower-goldenpoppy-free": "Growing Golden poppy",
   "block-wildplant-flower-redtopgrass-free": "Growing Redtop grass",
-  "block-wildplant-flower-cornflower-free": "Growing Cornflower"
+  "block-wildplant-flower-cornflower-free": "Growing Cornflower",
+
+  "block-wflog-resin-pine-*": "Erntbarer harzender Kiefernstamm",
+  "block-wflog-resin-acacia-*": "Erntbarer harzender Akazienstamm",
+  "block-wflog-resinharvested-pine-*": "Harzender Kiefernstamm",
+  "block-wflog-resinharvested-acacia-*": "Harzender Arkazienstamm"
 }

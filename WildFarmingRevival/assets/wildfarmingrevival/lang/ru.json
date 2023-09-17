@@ -173,5 +173,10 @@
   "block-wildplant-flower-redtopgrass-free": "Растущая трава Редтоп",
   "block-wildplant-flower-cornflower-free": "Растущий василек",
 
-  "msubstrate-barren": "Добавьте гриб в этот блок, чтобы начать его инкубацию."
+  "msubstrate-barren": "Добавьте гриб в этот блок, чтобы начать его инкубацию.",
+
+  "block-wflog-resin-pine-*": "Подтекающее сосновое бревно со смолой",
+  "block-wflog-resin-acacia-*": "Подтекающее бревно акации со смолой",
+  "block-wflog-resinharvested-pine-*": "Подтекающее сосновое бревно",
+  "block-wflog-resinharvested-acacia-*": "Подтекающее бревно акации"
 }

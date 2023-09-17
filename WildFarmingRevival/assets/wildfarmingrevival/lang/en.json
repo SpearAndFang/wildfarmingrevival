@@ -173,5 +173,10 @@
   "block-wildplant-flower-redtopgrass-free": "Growing Redtop grass",
   "block-wildplant-flower-cornflower-free": "Growing Cornflower",
 
-  "msubstrate-barren": "Add a mushroom to this block to begin incubating it."
+  "msubstrate-barren": "Add a mushroom to this block to begin incubating it.",
+
+  "block-wflog-resin-pine-*": "Leaking pine log with resin",
+  "block-wflog-resin-acacia-*": "Leaking acacia log with resin",
+  "block-wflog-resinharvested-pine-*": "Leaking pine log",
+  "block-wflog-resinharvested-acacia-*": "Leaking acacia log"
 }

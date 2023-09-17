@@ -173,6 +173,11 @@
   "block-wildplant-flower-redtopgrass-free": "Grama vermelha crescendo",
   "block-wildplant-flower-cornflower-free": "Escovinha crescendo",
 
-  "msubstrate-barren": "Add a mushroom to this block to begin incubating it."
+  "msubstrate-barren": "Add a mushroom to this block to begin incubating it.",
+
+  "block-wflog-resin-pine-*": "Tronco de pinheiro com resina",
+  "block-wflog-resin-acacia-*": "Tronco de acácia pingando com resina",
+  "block-wflog-resinharvested-pine-*": "Tronco de pinheiro vazando",
+  "block-wflog-resinharvested-acacia-*": "Tronco de acácia pingando"
 
 }

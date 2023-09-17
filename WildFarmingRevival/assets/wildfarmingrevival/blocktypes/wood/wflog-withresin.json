@@ -1,0 +1,224 @@
+{
+  "code": "wflog",
+  "__comment": "BlockLog contains only contains code for OnPickBlock",
+  "entityClassByType": {
+    "log-resinharvested-*": "Transient"
+  },
+  "behaviorsByType": {
+    "wflog-resinharvested-*": [
+      {
+        "name": "PushEventOnBlockBroken",
+        "properties": { "eventName": "testForDecay" }
+      }
+    ],
+    "*": [
+      {
+        "name": "PushEventOnBlockBroken",
+        "properties": { "eventName": "testForDecay" }
+      },
+      {
+        "name": "Harvestable",
+        "properties": {
+          "harvestTime": 1,
+          "harvestedStack": {
+            "type": "item",
+            "code": "resin",
+            "quantity": { "avg": 1 }
+          },
+          "harvestedBlockCode": "wflog-resinharvested-{wood}-ud"
+        }
+      }
+    ]
+  },
+  "attributesByType": {
+    "log-resinharvested-*": {
+      "transientProps": {
+        "convertFrom": "wflog-resinharvested-{wood}-ud",
+        "convertTo": "wflog-resin-{wood}-ud",
+        "inGameHours": "168"
+      },
+      "preventsDecay": true,
+      "treeFellingGroupCode": "{wood}",
+      "treeFellingGroupSpreadIndex": 3
+    },
+    "*": {
+      "preventsDecay": true,
+      "forageStatAffected": true,
+      "treeFellingGroupCode": "{wood}",
+      "treeFellingGroupSpreadIndex": 3
+    }
+  },
+  "variantgroups": [
+    {
+      "code": "type",
+      "states": [ "resin", "resinharvested" ]
+    },
+    {
+      "code": "wood",
+      "states": [ "pine", "acacia" ]
+    },
+    {
+      "code": "rotation",
+      "states": [ "north","south","east","west" ]
+    }
+  ],
+  "creativeinventory": {
+    "general": [ "*-north" ],
+    "flora": [ "*-north" ],
+    "construction": [ "*-north" ],
+    "wildfarming": [ "*-north" ]
+  },
+  "drawtype": "json",
+  "blockmaterial": "Wood",
+  "requiredMiningTier": 1,
+  "shapeByType": {
+    "wflog-resinharvested-*-north": {
+      "base": "game:block/wood/log/noresin1",
+      "rotateY": 0,
+      "alternates": [
+        {
+          "base": "game:block/wood/log/noresin2",
+          "rotateY": 0
+        }
+      ]
+    },
+    "wflog-resinharvested-*-east": {
+      "base": "game:block/wood/log/noresin1",
+      "rotateY": 270,
+      "alternates": [
+        {
+          "base": "game:block/wood/log/noresin2",
+          "rotateY": 270
+        }
+      ]
+    },
+    "wflog-resinharvested-*-south": {
+      "base": "game:block/wood/log/noresin1",
+      "rotateY": 180,
+      "alternates": [
+        {
+          "base": "game:block/wood/log/noresin2",
+          "rotateY": 180
+        }
+      ]
+    },
+    "wflog-resinharvested-*-west": {
+      "base": "game:block/wood/log/noresin1",
+      "rotateY": 90,
+      "alternates": [
+        {
+          "base": "game:block/wood/log/noresin2",
+          "rotateY": 90
+        }
+      ]
+    },
+    "*-north": {
+      "base": "game:block/wood/log/withresin1",
+      "rotateY": 0,
+      "alternates": [
+        {
+          "base": "game:block/wood/log/withresin2",
+          "rotateY": 0
+        }
+      ]
+    },
+    "*-east": {
+      "base": "game:block/wood/log/withresin1",
+      "rotateY": 270,
+      "alternates": [
+        {
+          "base": "game:block/wood/log/withresin2",
+          "rotateY": 270
+        }
+      ]
+    },
+    "*-south": {
+      "base": "game:block/wood/log/withresin1",
+      "rotateY": 180,
+      "alternates": [
+        {
+          "base": "game:block/wood/log/withresin2",
+          "rotateY": 180
+        }
+      ]
+    },
+    "*-west": {
+      "base": "game:block/wood/log/withresin1",
+      "rotateY": 90,
+      "alternates": [
+        {
+          "base": "game:block/wood/log/withresin2",
+          "rotateY": 90
+        }
+      ]
+    }
+  },
+  "textures": {
+    "bark": { "base": "game:block/wood/bark/{wood}" },
+    "trunk": { "base": "game:block/wood/treetrunk/{wood}" },
+    "resinbark1": {
+      "base": "game:block/wood/bark/{wood}",
+      "overlays": [ "game:block/wood/bark/resin1" ]
+    },
+    "resinbark2": {
+      "base": "game:block/wood/bark/{wood}",
+      "overlays": [ "game:block/wood/bark/resin2" ]
+    }
+  },
+  "replaceable": 500,
+  "resistance": 4.5,
+  "sounds": {
+    "place": "game:block/planks",
+    "walk": "game:walk/wood",
+    "hit": "game:block/planks",
+    "break": "game:block/planks",
+    "byTool": {
+      "Axe": {
+        "hit": "game:block/chop",
+        "break": "game:block/planks"
+      }
+    }
+  },
+  "drops": [
+    {
+      "type": "block",
+      "code": "game:log-placed-{wood}-ud",
+      "quantity": { "avg": 1 }
+    }
+  ],
+  "combustibleProps": {
+    "burnTemperature": 800,
+    "burnDuration": 60
+  },
+  "maxStackSize": 16,
+  "materialDensity": 700,
+  "heldTpIdleAnimation": "holdbothhandslarge",
+  "heldTpUseAnimation": "twohandplaceblock",
+  "guiTransform": {
+    "rotation": {
+      "x": -22.6,
+      "y": 135,
+      "z": 0
+    }
+  },
+  "fpHandTransform": {
+    "rotation": {
+      "x": 0,
+      "y": -77,
+      "z": 0
+    }
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": -1.23,
+      "y": -0.91,
+      "z": -0.8
+    },
+    "rotation": {
+      "x": -2,
+      "y": 25,
+      "z": -78
+    },
+    "scale": 0.4
+  }
+}

@@ -1,7 +1,8 @@
 namespace WildFarmingRevival.ModSystem
 {
+    using System;
+    //using System.Diagnostics;
     using System.Collections.Generic;
-    //using Vintagestory.API;
     using Vintagestory.API.Client;
     using Vintagestory.API.Common;
     using Vintagestory.API.Datastructures;
@@ -39,13 +40,6 @@ namespace WildFarmingRevival.ModSystem
             base.OnLoaded(api);
             if (!this.block.Code.Path.Contains("log-grown-pine-") && !this.block.Code.Path.Contains("log-grown-acacia-"))
             { return; }
-            var type = this.block.FirstCodePart(2);
-            this.scoredBlockCode = new AssetLocation("log-resinharvested-" + type + "-ud");
-            this.scoredBlock = api.World.GetBlock(this.scoredBlockCode);
-            if (this.scoredBlock == null)
-            {
-                api.World.Logger.Warning("Unable to resolve scored block code '{0}' for block {1}. Will ignore.", this.scoredBlockCode, this.block.Code);
-            }
 
             this.interactions = ObjectCacheUtil.GetOrCreate(api, "resinHarvest", () =>
             {
@@ -107,12 +101,41 @@ namespace WildFarmingRevival.ModSystem
                 var knife = byPlayer.InventoryManager.ActiveHotbarSlot.Itemstack;
                 if (knife != null && knife.Collectible.Tool == EnumTool.Knife)
                 {
-                    knife.Collectible.DamageItem(world, byPlayer.Entity, byPlayer.InventoryManager.ActiveHotbarSlot, 15);
-                    if (this.scoredBlock != null)
+
+                    var type = this.block.FirstCodePart(2);
+                    var facing = blockSel.Face.Opposite.ToString();
+                    if (facing == "up" || facing == "down")
+                    {
+                        var targetPos = blockSel.DidOffset ? blockSel.Position.AddCopy(blockSel.Face.Opposite) : blockSel.Position;
+                        var dx = byPlayer.Entity.Pos.X - (targetPos.X + blockSel.HitPosition.X);
+                        var dz = byPlayer.Entity.Pos.Z - (targetPos.Z + blockSel.HitPosition.Z);
+                        var angle = Math.Atan2(dx, dz);
+                        angle += Math.PI;
+                        angle /= Math.PI / 2;
+                        var halfQuarter = Convert.ToInt32(angle);
+                        halfQuarter %= 4;
+                        if (halfQuarter == 3)
+                        { facing = "west"; }
+                        else if (halfQuarter == 2)
+                        { facing = "north"; }
+                        else if (halfQuarter == 1)
+                        { facing = "east"; }
+                        else
+                        { facing = "south"; }
+                        //Debug.WriteLine(halfQuarter.ToString() + " - " + facing);
+
+                    }
+                    this.scoredBlockCode = new AssetLocation("wildfarmingrevival:wflog-resinharvested-" + type + "-" + facing);
+                    this.scoredBlock = world.GetBlock(this.scoredBlockCode);
+                    if (this.scoredBlock == null)
+                    {
+                        world.Logger.Warning("Unable to resolve scored block code '{0}' for block {1}. Will ignore.", this.scoredBlockCode, this.block.Code);
+                    }
+                    else
                     {
                         world.BlockAccessor.SetBlock(this.scoredBlock.BlockId, blockSel.Position);
+                        knife.Collectible.DamageItem(world, byPlayer.Entity, byPlayer.InventoryManager.ActiveHotbarSlot, 15);
                     }
-
                     world.PlaySoundAt(this.scoringSound, blockSel.Position.X, blockSel.Position.Y, blockSel.Position.Z, byPlayer);
                 }
             }
