@@ -8,6 +8,6 @@ namespace WildFarmingRevival.ModSystem
     public interface ITreePoi : IAnimalFoodSource
     {
         string Stage { get; }
-        new bool IsSuitableFor(Entity entity, string[] diet);
+        new bool IsSuitableFor(Entity entity, CreatureDiet diet);
     }
 }

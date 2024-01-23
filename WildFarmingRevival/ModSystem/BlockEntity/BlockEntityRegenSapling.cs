@@ -347,16 +347,15 @@ namespace WildFarmingRevival.ModSystem
         }
 
 
-        public bool IsSuitableFor(Entity entity, string[] diet)
+        public bool IsSuitableFor(Entity entity, CreatureDiet diet)
         {
-            diet = entity.Properties.Attributes?["blockDiet"]?.AsArray<string>();
             if (diet == null)
             { return false; }
-            return diet.Contains("Wood");
+            return diet.Matches(EnumFoodCategory.NoNutrition, "Wood");
         }
 
 
-        public float ConsumeOnePortion()
+        public float ConsumeOnePortion(Entity entity)
         {
             if (0.05f > this.Api.World.Rand.NextDouble())
             {
