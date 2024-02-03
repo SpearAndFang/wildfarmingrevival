@@ -36,7 +36,7 @@ namespace WildFarmingRevival.ModSystem
             {
                 if (!(poi is ITreePoi tree))
                 { return true; }
-                this.colonySupplies += tree.ConsumeOnePortion();
+                this.colonySupplies += tree.ConsumeOnePortion(null);
                 if (this.colonySupplies > 100 && !newNest)
                 {
                     var swarmPos = tree.Position.AsBlockPos.Add(-2, 0, -2);
