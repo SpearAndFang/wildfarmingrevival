@@ -1,0 +1,345 @@
+{
+  "version": 1,
+  "file": "WildFarmingConfig119.json",
+  "settings": {
+    "float": {
+      "SEEDLINGGROWTHRATEMULTIPLIER": {
+        "name": "SeedlingGrowthRateMultiplier",
+        "ingui": "",
+        "weight": 5,
+        "comment": "wildfarmingrevival:SeedlingGrowthRateMultiplier-Comment",
+
+        "default": 1.0,
+        "range": {
+          "min": 0.0,
+          "max": 1.0
+        }
+      },
+      "SAPLINGTOTREESIZE": {
+        "name": "SaplingToTreeSize",
+        "ingui": "",
+        "weight": 8,
+        "comment": "wildfarmingrevival:SaplingToTreeSize-Comment",
+
+        "default": 0.6,
+        "range": {
+          "min": 0.0,
+          "max": 1.0
+        }
+      },
+      "TREESIZEPERGROWTHSTAGE": {
+        "name": "TreeSizePerGrowthStage",
+        "ingui": "",
+        "weight": 9,
+        "comment": "wildfarmingrevival:TreeSizePerGrowthStage-Comment",
+
+        "default": 0.125,
+        "range": {
+          "min": 0.0,
+          "max": 1.0
+        }
+      },
+      "TREEREVERTGROWTHTEMPTHRESHOLD": {
+        "name": "TreeRevertGrowthTempThreshold",
+        "ingui": "",
+        "weight": 10,
+        "comment": "wildfarmingrevival:TreeRevertGrowthTempThreshold-Comment",
+
+        "default": 5.0,
+        "range": {
+          "min": 0.0,
+          "max": 20.0
+        }
+      },
+      "TREEREGENMULTIPLIER": {
+        "name": "TreeRegenMultiplier",
+        "ingui": "",
+        "weight": 11,
+        "comment": "wildfarmingrevival:TreeRegenMultiplier-Comment",
+
+        "default": 1.0,
+        "range": {
+          "min": 0.0,
+          "max": 1.0
+        }
+      },
+      "TREEREPOPCHANCE": {
+        "name": "TreeRepopChance",
+        "ingui": "",
+        "weight": 12,
+        "comment": "wildfarmingrevival:TreeRepopChance-Comment",
+
+        "default": 0.2,
+        "range": {
+          "min": 0.0,
+          "max": 1.0
+        }
+      },
+      "TREEFOILAGECHANCE": {
+        "name": "TreeFoilageChance",
+        "ingui": "",
+        "weight": 13,
+        "comment": "wildfarmingrevival:TreeFoilageChance-Comment",
+
+        "default": 1.0,
+        "range": {
+          "min": 0.0,
+          "max": 1.0
+        }
+      }
+    },
+    "integer": {
+      "MAXTREEGROWTHSTAGES": {
+        "name": "MaxTreeGrowthStages",
+        "ingui": "",
+        "weight": 1,
+        "comment": "wildfarmingrevival:MaxTreeGrowthStages-Comment",
+
+        "default": 4,
+        "range": {
+          "min": 1,
+          "max": 5
+        }
+      },
+	  "FERNREPOPRATE": {
+        "name": "FernRepopRate",
+        "ingui": "",
+        "weight": 2,
+        "comment": "wildfarmingrevival:FernRepopRate-Comment",
+
+        "default": 20,
+        "range": {
+          "min": 0,
+          "max": 100
+        }
+      },
+	  "GROWNTREEREPOPMINIMUM": {
+        "name": "GrownTreeRepopMinimum",
+        "ingui": "",
+        "weight": 6,
+        "comment": "wildfarmingrevival:GrownTreeRepopMinimum-Comment",
+
+        "default": 8,
+        "range": {
+          "min": 1,
+          "max": 20
+        }
+      },
+	  "GROWNTREEREPOPVERTSEARCH": {
+        "name": "GrownTreeRepopVertSearch",
+        "ingui": "",
+        "weight": 7,
+        "comment": "wildfarmingrevival:GrownTreeRepopVertSearch-Comment",
+
+        "default": 5,
+        "range": {
+          "min": 1,
+          "max": 10
+        }
+      },
+	  "TREEFOILAGETRIESPERDAY": {
+        "name": "TreeFoilageTriesPerDay",
+        "ingui": "",
+        "weight": 14,
+        "comment": "wildfarmingrevival:TreeFoilageTriesPerDay-Comment",
+
+        "default": 5,
+        "range": {
+          "min": 1,
+          "max": 20
+        }
+      }
+    },
+    "boolean": {
+      "PROPOGATEINTOWATER": {
+        "name": "PropogateIntoWater",
+        "ingui": "wildfarmingrevival:PropogateIntoWater",
+        "weight": 3,
+        "comment": "wildfarmingrevival:PropogateIntoWater-Comment",
+        "default": false
+      },
+      "PROPOGATEINTOCLAIMS": {
+        "name": "PropogateIntoClaims",
+        "ingui": "wildfarmingrevival:PropogateIntoClaims",
+        "weight": 4,
+        "comment": "wildfarmingrevival:PropogateIntoClaims-Comment",
+        "default": false
+      },
+      "HARSHWILDPLANTS": {
+        "name": "HarshWildPlants",
+        "ingui": "wildfarmingrevival:HarshWildPlants",
+        "weight": 15,
+        "comment": "wildfarmingrevival:HarshWildPlants-Comment",
+        "default": true
+      },
+      "FLOWERSENABLED": {
+        "name": "FlowersEnabled",
+        "ingui": "wildfarmingrevival:FlowersEnabled",
+        "weight": 16,
+        "comment": "wildfarmingrevival:FlowersEnabled-Comment",
+        "default": true
+      },
+      "SEEDPANNINGENABLED": {
+        "name": "SeedPanningEnabled",
+        "ingui": "wildfarmingrevival:SeedPanningEnabled",
+        "weight": 17,
+        "comment": "wildfarmingrevival:SeedPanningEnabled-Comment",
+        "default": true
+      },
+      "CROPSEEDSENABLED": {
+        "name": "CropSeedsEnabled",
+        "ingui": "wildfarmingrevival:CropSeedsEnabled",
+        "weight": 18,
+        "comment": "wildfarmingrevival:CropSeedsEnabled-Comment",
+        "default": true
+      },
+      "BUSHSEEDSENABLED": {
+        "name": "BushSeedsEnabled",
+        "ingui": "wildfarmingrevival:BushSeedsEnabled",
+        "weight": 19,
+        "comment": "wildfarmingrevival:BushSeedsEnabled-Comment",
+        "default": true
+      },
+      "CACTISEEDSENABLED": {
+        "name": "CactiSeedsEnabled",
+        "ingui": "wildfarmingrevival:CactiSeedsEnabled",
+        "weight": 20,
+        "comment": "wildfarmingrevival:CactiSeedsEnabled-Comment",
+        "default": true
+      },
+      "MUSHROOMFARMINGENABLED": {
+        "name": "MushroomFarmingEnabled",
+        "ingui": "wildfarmingrevival:MushroomFarmingEnabled",
+        "weight": 21,
+        "comment": "wildfarmingrevival:MushroomFarmingEnabled-Comment",
+        "default": true
+      },
+      "VINEGROWTHENABLED": {
+        "name": "VineGrowthEnabled",
+        "ingui": "wildfarmingrevival:VineGrowthEnabled",
+        "weight": 22,
+        "comment": "wildfarmingrevival:VineGrowthEnabled-Comment",
+        "default": false
+      },
+      "LOGSCORINGENABLED": {
+        "name": "LogScoringEnabled",
+        "ingui": "wildfarmingrevival:LogScoringEnabled",
+        "weight": 23,
+        "comment": "wildfarmingrevival:LogScoringEnabled-Comment",
+        "default": true
+      },
+      "REEDCLONINGENABLED": {
+        "name": "ReedCloningEnabled",
+        "ingui": "wildfarmingrevival:ReedCloningEnabled",
+        "weight": 24,
+        "comment": "wildfarmingrevival:ReedCloningEnabled-Comment",
+        "default": true
+      },
+      "LIVINGTREESENABLED": {
+        "name": "LivingTreesEnabled",
+        "ingui": "wildfarmingrevival:LivingTreesEnabled",
+        "weight": 25,
+        "comment": "wildfarmingrevival:LivingTreesEnabled-Comment",
+        "default": false
+      },
+      "HARSHSAPLINGSENABLED": {
+        "name": "HarshSaplingsEnabled",
+        "ingui": "wildfarmingrevival:HarshSaplingsEnabled",
+        "weight": 26,
+        "comment": "wildfarmingrevival:HarshSaplingsEnabled-Comment",
+        "default": false
+      },
+      "SEAWEEDGROWTHENABLED": {
+        "name": "SeaweedGrowthEnabled",
+        "ingui": "wildfarmingrevival:SeaweedGrowthEnabled",
+        "weight": 27,
+        "comment": "wildfarmingrevival:SeaweedGrowthEnabled-Comment",
+        "default": true
+      },
+      "TERMITESENABLED": {
+        "name": "TermitesEnabled",
+        "ingui": "wildfarmingrevival:TermitesEnabled",
+        "weight": 28,
+        "comment": "wildfarmingrevival:TermitesEnabled-Comment",
+        "default": true
+      },
+      "RESINGROWTHENABLED": {
+        "name": "ResinGrowthEnabled",
+        "ingui": "wildfarmingrevival:ResinGrowthEnabled",
+        "weight": 29,
+        "comment": "wildfarmingrevival:ResinGrowthEnabled-Comment",
+        "default": false
+      }
+    }
+  },
+  "formatting": [
+    {
+      "type": "separator",
+      "text": "wildfarmingrevival:MaxTreeGrowthStages",
+      "weight": 0.5
+    },
+    {
+      "type": "separator",
+      "text": "wildfarmingrevival:FernRepopRate",
+      "weight": 1.5
+    },
+    {
+      "type": "separator",
+      "weight": 2.5
+    },
+    {
+      "type": "separator",
+      "text": "wildfarmingrevival:SeedlingGrowthRateMultiplier",
+      "weight": 4.5
+    },
+    {
+      "type": "separator",
+      "text": "wildfarmingrevival:GrownTreeRepopMinimum",
+      "weight": 5.5
+    },
+    {
+      "type": "separator",
+      "text": "wildfarmingrevival:GrownTreeRepopVertSearch",
+      "weight": 6.5
+    },
+    {
+      "type": "separator",
+      "text": "wildfarmingrevival:SaplingToTreeSize",
+      "weight": 7.5
+    },
+    {
+      "type": "separator",
+      "text": "wildfarmingrevival:TreeSizePerGrowthStage",
+      "weight": 8.5
+    },
+    {
+      "type": "separator",
+      "text": "wildfarmingrevival:TreeRevertGrowthTempThreshold",
+      "weight": 9.5
+    },
+    {
+      "type": "separator",
+      "text": "wildfarmingrevival:TreeRegenMultiplier",
+      "weight": 10.5
+    },
+    {
+      "type": "separator",
+      "text": "wildfarmingrevival:TreeRepopChance",
+      "weight": 11.5
+    },
+    {
+      "type": "separator",
+      "text": "wildfarmingrevival:TreeFoilageChance",
+      "weight": 12.5
+    },
+    {
+      "type": "separator",
+      "text": "wildfarmingrevival:TreeFoilageTriesPerDay",
+      "weight": 13.5
+    },
+    {
+      "type": "separator",
+      "weight": 14.5
+    }
+  ]
+}

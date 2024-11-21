@@ -1,0 +1,30 @@
+{
+  "recipeingredient-item-herbbundle-basil-insturmentalcase": "базиліком",
+  "recipeingredient-item-herbbundle-chamomile-insturmentalcase": "ромашкою",
+  "recipeingredient-item-herbbundle-cilantro-insturmentalcase": "коріандром",
+  "recipeingredient-item-herbbundle-lavender-insturmentalcase": "лавандою",
+  "recipeingredient-item-herbbundle-marjoram-insturmentalcase": "майораном",
+  "recipeingredient-item-herbbundle-mint-insturmentalcase": "м'ятою",
+  "recipeingredient-item-herbbundle-saffron-insturmentalcase": "шафраном",
+  "recipeingredient-item-herbbundle-sage-insturmentalcase": "шавліею",
+  "recipeingredient-item-herbbundle-thyme-insturmentalcase": "чебрецем",
+
+  "meal-ingredient-soup-primary-herbbundle-basil": "базиліковий",
+  "meal-ingredient-soup-primary-herbbundle-chamomile": "ромашковий",
+  "meal-ingredient-soup-primary-herbbundle-cilantro": "коріандровий",
+  "meal-ingredient-soup-primary-herbbundle-lavender": "лавандовий",
+  "meal-ingredient-soup-primary-herbbundle-marjoram": "майорановий",
+  "meal-ingredient-soup-primary-herbbundle-mint": "м'ятний",
+  "meal-ingredient-soup-primary-herbbundle-saffron": "шафрановий",
+  "meal-ingredient-soup-primary-herbbundle-sage": "шавлієвий",
+  "meal-ingredient-soup-primary-herbbundle-thyme": "чебрецевий",
+
+  "block-muddygravel-*": "Мулистий гравій",
+
+  "block-sapling-ferntree-*": "Саджанець папороті",
+
+  "block-seaweed-top": "Обрізки водоростей",
+
+  "item-axe-felling-wfradmin": "Сокира адміністратора",
+  "itemdesc-axe-felling-wfradmin": "З великою силою приходить велика відповідальність."
+}
